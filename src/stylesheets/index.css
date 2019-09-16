@@ -3,8 +3,9 @@
 }
 
 .mainBody {
-  min-height: 1000px;
+  min-height: 2000px;
   position: relative;
+  background: #f0f0f0;
 }
 
 .mainBody .banner {
@@ -14,16 +15,17 @@
   position: relative;
   padding: 0 !important;
   z-index: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
+          clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
 }
 
-.mainBody .banner .clipMask {
-  background-color: #ffffff;
-  min-height: 20%;
+.mainBody .banner .banner__h1 {
   position: absolute;
-  bottom: -10px;
-  z-index: 1;
-  -webkit-clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+  color: #f0f0f0;
+  font-size: 8rem;
+  left: 25%;
+  top: 10%;
+  z-index: 100;
 }
 
 .mainBody .object {
@@ -54,5 +56,9 @@
   left: 5%;
   width: 1000px;
   height: 1000px;
+}
+
+.span--hightlight {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=index.css.map */

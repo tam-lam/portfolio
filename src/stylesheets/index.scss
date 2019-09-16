@@ -2,28 +2,37 @@ $black: #282828;
 $darkGray: #303030;
 $midGray: #383838;
 $lightGray: #484848;
-$white: #ffffff;
+$white: #f0f0f0;
 .nopadding {
   padding: 0 !important;
 }
 .mainBody {
-  min-height: 1000px;
+  min-height: 2000px;
   position: relative;
+  background: $white;
   .banner {
     overflow: hidden;
-
     background-color: $black;
     min-height: 700px;
     position: relative;
     padding: 0 !important;
     z-index: 0;
-    .clipMask {
-      background-color: $white;
-      min-height: 20%;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
+
+    // .clipMask {
+    //   background-color: $white;
+    //   min-height: 20%;
+    //   position: absolute;
+    //   bottom: -10px;
+    //   z-index: 1;
+    // }
+    .banner__h1 {
       position: absolute;
-      bottom: -10px;
-      z-index: 1;
-      clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+      color: $white;
+      font-size: 8rem;
+      left: 25%;
+      top: 10%;
+      z-index: 100;
     }
   }
   .object {
@@ -37,6 +46,7 @@ $white: #ffffff;
       top: 20%;
       background: $lightGray;
       z-index: 100;
+      // position: fixed;
     }
     &--midground {
       left: 2%;
@@ -53,4 +63,7 @@ $white: #ffffff;
       height: 1000px;
     }
   }
+}
+.span--hightlight {
+  background-color: rgba(0, 0, 0, 0.2);
 }
