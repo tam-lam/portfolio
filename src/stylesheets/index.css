@@ -1,0 +1,27 @@
+.nopadding {
+  padding: 0 !important;
+}
+
+.mainBody {
+  min-height: 1000px;
+  position: relative;
+}
+
+.mainBody .banner {
+  background-color: #282828;
+  min-height: 700px;
+  position: relative;
+  padding: 0 !important;
+  z-index: 0;
+}
+
+.mainBody .banner .clipMask {
+  background-color: #ffffff;
+  min-height: 20%;
+  position: absolute;
+  bottom: -10px;
+  z-index: 1;
+  -webkit-clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+}
+/*# sourceMappingURL=index.css.map */

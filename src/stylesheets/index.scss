@@ -1,0 +1,26 @@
+$black: #282828;
+$darkGray: #484848;
+$lightGray: #686868;
+$white: #ffffff;
+.nopadding {
+  padding: 0 !important;
+}
+.mainBody {
+  min-height: 1000px;
+  position: relative;
+  .banner {
+    background-color: $black;
+    min-height: 700px;
+    position: relative;
+    padding: 0 !important;
+    z-index: 0;
+    .clipMask {
+      background-color: $white;
+      min-height: 20%;
+      position: absolute;
+      bottom: -10px;
+      z-index: 1;
+      clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}

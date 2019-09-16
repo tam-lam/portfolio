@@ -9,7 +9,11 @@ class Home extends Component {
     return (
       <React.Fragment>
         <NavBar></NavBar>
-        <Container fluid="true"></Container>
+        <Container className="mainBody nopadding" fluid="true">
+          <Container className="banner" fluid="true">
+            <Container className="clipMask" fluid="true"></Container>
+          </Container>
+        </Container>
       </React.Fragment>
     );
   }
