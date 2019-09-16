@@ -8,6 +8,7 @@
 }
 
 .mainBody .banner {
+  overflow: hidden;
   background-color: #282828;
   min-height: 700px;
   position: relative;
@@ -23,5 +24,35 @@
   z-index: 1;
   -webkit-clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+}
+
+.mainBody .object {
+  border-radius: 50%;
+  position: absolute;
+}
+
+.mainBody .object--foreground {
+  width: 200px;
+  height: 200px;
+  right: 10%;
+  top: 20%;
+  background: #484848;
+  z-index: 100;
+}
+
+.mainBody .object--midground {
+  left: 2%;
+  top: 5%;
+  background: #383838;
+  width: 400px;
+  height: 400px;
+}
+
+.mainBody .object--background {
+  background: #303030;
+  top: -10%;
+  left: 5%;
+  width: 1000px;
+  height: 1000px;
 }
 /*# sourceMappingURL=index.css.map */

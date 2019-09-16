@@ -1,6 +1,7 @@
 $black: #282828;
-$darkGray: #484848;
-$lightGray: #686868;
+$darkGray: #303030;
+$midGray: #383838;
+$lightGray: #484848;
 $white: #ffffff;
 .nopadding {
   padding: 0 !important;
@@ -9,6 +10,8 @@ $white: #ffffff;
   min-height: 1000px;
   position: relative;
   .banner {
+    overflow: hidden;
+
     background-color: $black;
     min-height: 700px;
     position: relative;
@@ -21,6 +24,33 @@ $white: #ffffff;
       bottom: -10px;
       z-index: 1;
       clip-path: polygon(0 0, 71% 83%, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  .object {
+    border-radius: 50%;
+    position: absolute;
+
+    &--foreground {
+      width: 200px;
+      height: 200px;
+      right: 10%;
+      top: 20%;
+      background: $lightGray;
+      z-index: 100;
+    }
+    &--midground {
+      left: 2%;
+      top: 5%;
+      background: $midGray;
+      width: 400px;
+      height: 400px;
+    }
+    &--background {
+      background: $darkGray;
+      top: -10%;
+      left: 5%;
+      width: 1000px;
+      height: 1000px;
     }
   }
 }
