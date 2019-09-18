@@ -1,6 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import React, { Component } from "react";
+import React from "react";
 function Navigation() {
   return (
     <React.Fragment>

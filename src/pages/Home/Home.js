@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "../components/Navigation";
+import NavBar from "../../components/Navigation/Navigation";
 import Container from "react-bootstrap/Container";
 import Rellax from "rellax";
+import NavPills from "../../components/NavPills";
 
 class Home extends Component {
   state = {};
@@ -40,7 +41,7 @@ class Home extends Component {
               className="rellax object object--midground shadow-lg"
               data-rellax-speed="-3"
             ></div>
-            <Container className="clipMask" fluid="true"></Container>
+            {/* <NavPills></NavPills> */}
           </Container>
         </Container>
       </React.Fragment>
