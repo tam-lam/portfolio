@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "../../components/Navigation/Navigation";
 import Container from "react-bootstrap/Container";
 import Rellax from "rellax";
-import NavPills from "../../components/NavPills";
-
+import CenteredTabs from "../../components/TabPanel/TabPanel";
 class Home extends Component {
   state = {};
   componentDidMount() {
@@ -20,7 +18,7 @@ class Home extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar></NavBar>
+        {/* <NavBar></NavBar> */}
         <Container className="mainBody nopadding" fluid="true">
           <div
             className="rellax object object--foreground shadow-lg"
@@ -41,7 +39,9 @@ class Home extends Component {
               className="rellax object object--midground shadow-lg"
               data-rellax-speed="-3"
             ></div>
-            {/* <NavPills></NavPills> */}
+          </Container>
+          <Container className="tabs">
+            <CenteredTabs></CenteredTabs>
           </Container>
         </Container>
       </React.Fragment>

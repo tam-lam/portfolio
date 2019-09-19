@@ -2,6 +2,11 @@
   padding: 0 !important;
 }
 
+.tabs {
+  background-color: cadetblue;
+  min-height: 100px;
+}
+
 .mainBody {
   min-height: 2000px;
   position: relative;
@@ -16,7 +21,7 @@
   padding: 0 !important;
   z-index: 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
-          clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
 }
 
 .mainBody .banner .banner__h1 {
@@ -27,11 +32,11 @@
   top: 10%;
   z-index: 100;
   -webkit-animation-name: flashing;
-          animation-name: flashing;
+  animation-name: flashing;
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 .mainBody .object {
