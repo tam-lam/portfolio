@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
@@ -51,7 +50,7 @@ export default function CenteredTabs() {
       >
         <Tab label="Projects" {...a11yProps(0)}></Tab>
         <Tab label="Qualification" {...a11yProps(1)}></Tab>
-        <Tab label="Item Three" {...a11yProps(2)}></Tab>
+        <Tab label="Contact" {...a11yProps(2)}></Tab>
       </Tabs>
       <TabPanel value={value} index={0}>
         Item One <div>Key</div>

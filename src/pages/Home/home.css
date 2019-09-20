@@ -5,6 +5,8 @@
 .tabs {
   background-color: cadetblue;
   min-height: 100px;
+  position: relative;
+  z-index: 101;
 }
 
 .mainBody {
@@ -21,7 +23,7 @@
   padding: 0 !important;
   z-index: 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
+          clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
 }
 
 .mainBody .banner .banner__h1 {
@@ -32,11 +34,11 @@
   top: 10%;
   z-index: 100;
   -webkit-animation-name: flashing;
-  animation-name: flashing;
+          animation-name: flashing;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .mainBody .object {
@@ -50,7 +52,7 @@
   right: 10%;
   top: 20%;
   background: #484848;
-  z-index: 100;
+  z-index: 10;
 }
 
 .mainBody .object--midground {
