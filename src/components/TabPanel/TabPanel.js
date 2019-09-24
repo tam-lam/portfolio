@@ -4,6 +4,10 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import Projects from "../Projects/Projects";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+
 const useStyles = makeStyles({
   root: {
     flexGrow: 1
@@ -31,27 +35,6 @@ function TabPanel(props) {
     </Typography>
   );
 }
-const StyledTabs = withStyles({
-  root: {
-    background: "#303030",
-    borderRadius: "5px",
-    zIndex: "101",
-    position: "relative"
-  },
-  indicator: {
-    position: "relative",
-    bottom: "5px",
-    zIndex: "101",
-    display: "flex",
-    justifyContent: "center",
-    backgroundColor: "transparent",
-    "& > div": {
-      maxWidth: 40,
-      width: "100%",
-      backgroundColor: "white"
-    }
-  }
-})(props => <Tabs {...props} TabIndicatorProps={{ children: <div /> }} />);
 
 export default function CenteredTabs() {
   const classes = useStyles();
@@ -76,17 +59,40 @@ export default function CenteredTabs() {
         <StyledTab label="Contact" {...a11yProps(2)}></StyledTab>
       </StyledTabs>
       <TabPanel value={value} index={0}>
-        Item One <div className="test">Key</div>
+        <Projects></Projects>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <About></About>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Contact></Contact>
       </TabPanel>
     </React.Fragment>
   );
 }
+const StyledTabs = withStyles({
+  root: {
+    margin: "auto",
+    maxWidth: "500px",
+    background: "#303030",
+    borderRadius: "5px",
+    zIndex: "101",
+    position: "relative"
+  },
+  indicator: {
+    position: "relative",
+    bottom: "5px",
+    zIndex: "101",
+    display: "flex",
+    justifyContent: "center",
+    backgroundColor: "transparent",
+    "& > div": {
+      maxWidth: 40,
+      width: "100%",
+      backgroundColor: "white"
+    }
+  }
+})(props => <Tabs {...props} TabIndicatorProps={{ children: <div /> }} />);
 const StyledTab = withStyles(theme => ({
   root: {
     position: "relative",
