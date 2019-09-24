@@ -31,7 +31,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      <Box p={3}>{children}</Box>
+      <Box p={0}>{children}</Box>
     </Typography>
   );
 }
@@ -70,11 +70,11 @@ export default function CenteredTabs() {
     </React.Fragment>
   );
 }
+
 const StyledTabs = withStyles({
   root: {
-    margin: "auto",
     maxWidth: "500px",
-    background: "#303030",
+    margin: "auto",
     borderRadius: "5px",
     zIndex: "101",
     position: "relative"
@@ -89,30 +89,29 @@ const StyledTabs = withStyles({
     "& > div": {
       maxWidth: 40,
       width: "100%",
-      backgroundColor: "white"
+      backgroundColor: "black"
     }
   }
 })(props => <Tabs {...props} TabIndicatorProps={{ children: <div /> }} />);
 const StyledTab = withStyles(theme => ({
   root: {
+    background: "#f0f0f0",
+    borderRadius: "5px",
     position: "relative",
-    margin: "0px",
     textTransform: "uppercase",
     color: "gray",
-    fontWeight: theme.typography.fontWeightMedium,
+    fontWeight: "bold",
     marginRight: theme.spacing(1),
     "&:focus": {
       outline: "0",
-      color: "#f0f0f0"
+      color: "black"
     },
     "&:hover": {
-      color: "",
       opacity: 1,
-      color: "white"
+      color: "black"
     },
     "&$selected": {
-      color: "white",
-      fontWeight: theme.typography.fontWeightMedium
+      color: "black"
     }
   },
   selected: {}

@@ -1,2 +1,3 @@
-@import "pages/Home/home.css";
+@import "components/Home/home.css";
 @import "components/TabPanel/tabPanel.css";
+@import "components/Projects/projects.css";

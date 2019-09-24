@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 import Rellax from "rellax";
-import CenteredTabs from "../../components/TabPanel/TabPanel";
-import Banner from "../../components/Banner/Banner";
+import CenteredTabs from "../TabPanel/TabPanel";
+import Banner from "../Banner/Banner";
 class Home extends Component {
   state = {};
   componentDidMount() {

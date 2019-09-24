@@ -1,0 +1,39 @@
+.h1--bg {
+  color: #303030;
+}
+
+.project {
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+  background: #f8f8f8;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.project h3 {
+  font-weight: 900;
+}
+
+.project .thumbnail {
+  width: 300px;
+}
+
+.project--leftTopCut {
+  -webkit-clip-path: polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+}
+
+.project__card {
+  border: none !important;
+  background: transparent !important;
+}
+
+.project__title {
+  font-size: 2em !important;
+  color: #f0f0f0;
+  font-weight: bold !important;
+  margin: 10px;
+  background: #303030;
+}
+/*# sourceMappingURL=projects.css.map */

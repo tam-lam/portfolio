@@ -4,12 +4,15 @@ import Container from "react-bootstrap/Container";
 function Banner() {
   return (
     <Container className="banner" fluid="true">
-      <h1 className="rellax banner__h1 shadown-lg" data-rellax-speed="-5">
-        Hi,
-        <br />
-        I'm <span className="span--hightlight">Tam</span>,
-        <br /> developer.
-      </h1>
+      <Container>
+        <h1 className="rellax banner__h1 shadown-lg" data-rellax-speed="-5">
+          Hi,
+          <br />
+          I'm <span className="span--hightlight">Tam</span>,
+          <br /> developer.
+        </h1>
+      </Container>
+
       <div
         className="rellax object object--background shadow-lg"
         data-rellax-speed="1"
