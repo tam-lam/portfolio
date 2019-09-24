@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,gBAAgB,EAAE,SAAS;EAC3B,UAAU,EAAE,KAAK;EACjB,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,GAAG;CACb;;AAED,AAAA,KAAK,CAAC;EACJ,UAAU,EAAE,oBAAoB;CAGjC",
+    "sources": [
+        "tabPanel.scss"
+    ],
+    "names": [],
+    "file": "tabPanel.css"
+}

@@ -2,13 +2,6 @@
   padding: 0 !important;
 }
 
-.tabs {
-  background-color: cadetblue;
-  min-height: 100px;
-  position: relative;
-  z-index: 101;
-}
-
 .mainBody {
   min-height: 2000px;
   position: relative;
@@ -16,6 +9,7 @@
 }
 
 .mainBody .banner {
+  margin-bottom: 20px;
   overflow: hidden;
   background-color: #282828;
   min-height: 700px;

@@ -1,1 +1,2 @@
-@import "./pages/Home/home.css";
+@import "pages/Home/home.css";
+@import "components/TabPanel/tabPanel.css";

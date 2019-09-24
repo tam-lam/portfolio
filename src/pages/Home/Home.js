@@ -40,7 +40,7 @@ class Home extends Component {
               data-rellax-speed="-3"
             ></div>
           </Container>
-          <Container className="tabs">
+          <Container>
             <CenteredTabs></CenteredTabs>
           </Container>
         </Container>
