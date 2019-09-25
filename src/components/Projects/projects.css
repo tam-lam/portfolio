@@ -7,8 +7,9 @@
   position: relative;
   z-index: 100;
   background: #f8f8f8;
-  padding: 20px;
-  padding-top: 40px;
+  padding: 0 !important;
+  margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .project h3 {
@@ -25,6 +26,8 @@
 }
 
 .project__card {
+  padding: 30px;
+  padding-bottom: 0;
   border: none !important;
   background: transparent !important;
 }
@@ -35,5 +38,14 @@
   font-weight: bold !important;
   margin: 10px;
   background: #303030;
+}
+
+.project__overview {
+  height: 100%;
+  background: #303030;
+  color: #f0f0f0;
+  padding: 40px;
+  padding-left: 30px !important;
+  padding-right: 40px !important;
 }
 /*# sourceMappingURL=projects.css.map */
