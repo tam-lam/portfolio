@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Rellax from "rellax";
 import CenteredTabs from "../TabPanel/TabPanel";
 import Banner from "../Banner/Banner";
+
 class Home extends Component {
   state = {};
   componentDidMount() {
@@ -21,7 +22,7 @@ class Home extends Component {
         <Container className="mainBody nopadding" fluid="true">
           <div
             className="rellax object object--foreground shadow-lg"
-            data-rellax-speed="-7"
+            data-rellax-speed="-3"
           ></div>
           <Banner></Banner>
           <Container>

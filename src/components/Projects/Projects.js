@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-
 import { ProjectCard } from "../ProjectCard/ProjectCard";
+import Fade from "react-reveal/Fade";
 
 class Projects extends Component {
   state = {};
@@ -13,8 +13,10 @@ class Projects extends Component {
         >
           Projects
         </h1>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
+        <Fade right>
+          <ProjectCard></ProjectCard>
+          <ProjectCard></ProjectCard>
+        </Fade>
       </React.Fragment>
     );
   }
