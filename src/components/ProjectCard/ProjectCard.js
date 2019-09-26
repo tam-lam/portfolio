@@ -6,6 +6,11 @@ import lazymachine from "../../assets/images/lazymachine.png";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
+import Button from "react-bootstrap/Button";
+
+import gitIcon from "../../assets/images/github.png";
+import liveIcon from "../../assets/images/live.png";
 export const ProjectCard = params => {
   return (
     <React.Fragment>
@@ -16,7 +21,22 @@ export const ProjectCard = params => {
               <h1 className="project__title">_Car sharing app</h1>
 
               <Card.Img variant="top" src={carSharing} />
-              <Card.Body></Card.Body>
+              <Card.Body>
+                <Row className="links ">
+                  <Col className="text-center">
+                    <a href="#">
+                      <Image className="glyph" src={gitIcon} fluid />
+                      Live Preview
+                    </a>
+                  </Col>
+                  <Col className="text-center">
+                    <a href="#">
+                      <Image className="glyph" src={liveIcon} />
+                      View Source
+                    </a>
+                  </Col>
+                </Row>
+              </Card.Body>
             </Card>
           </Col>
           <Col md={8}>

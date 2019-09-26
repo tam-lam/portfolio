@@ -14,7 +14,9 @@ $fgWhite: #f8f8f8;
   padding-right: 30px;
   margin-left: 20px !important;
 }
-
+.glyph {
+  width: 24px;
+}
 .project {
   border-radius: 20px;
   position: relative;
@@ -52,5 +54,36 @@ $fgWhite: #f8f8f8;
     padding: 40px;
     padding-left: 30px !important;
     padding-right: 40px !important;
+  }
+  .links {
+    .col {
+      padding-bottom: 20px;
+      align-content: center;
+    }
+  }
+  a {
+    color: $lightGray;
+    transition: 0.8s;
+    opacity: 0.7;
+    position: relative;
+  }
+  a:hover {
+    color: $black;
+    opacity: 1;
+    text-decoration: none;
+  }
+  a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: $black;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: -10px;
+  }
+  a:hover::before {
+    width: 100%;
   }
 }

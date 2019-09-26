@@ -10,6 +10,10 @@
   margin-left: 20px !important;
 }
 
+.glyph {
+  width: 24px;
+}
+
 .project {
   border-radius: 20px;
   position: relative;
@@ -55,5 +59,42 @@
   padding: 40px;
   padding-left: 30px !important;
   padding-right: 40px !important;
+}
+
+.project .links .col {
+  padding-bottom: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.project a {
+  color: #484848;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 0.7;
+  position: relative;
+}
+
+.project a:hover {
+  color: #282828;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.project a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #282828;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  bottom: -10px;
+}
+
+.project a:hover::before {
+  width: 100%;
 }
 /*# sourceMappingURL=projectCard.css.map */
