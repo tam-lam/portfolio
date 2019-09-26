@@ -4,24 +4,17 @@ $midGray: #383838;
 $lightGray: #484848;
 $white: #f0f0f0;
 $fgWhite: #f8f8f8;
+.technical {
+  padding: 0 !important;
+}
 .features {
-  border-left: 1px solid white;
+  border-left: 1px solid $white;
   line-height: 1;
   padding-left: 10px;
   padding-right: 30px;
-  margin-left: 20px;
+  margin-left: 20px !important;
+}
 
-  ul {
-    border-left: 1px solid white;
-    padding-left: 20px;
-    margin-left: 20px;
-    list-style-type: none;
-  }
-}
-.technical {
-  ul {
-  }
-}
 .project {
   border-radius: 20px;
   position: relative;

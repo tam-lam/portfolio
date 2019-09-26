@@ -1,16 +1,13 @@
+.technical {
+  padding: 0 !important;
+}
+
 .features {
-  border-left: 1px solid white;
+  border-left: 1px solid #f0f0f0;
   line-height: 1;
   padding-left: 10px;
   padding-right: 30px;
-  margin-left: 20px;
-}
-
-.features ul {
-  border-left: 1px solid white;
-  padding-left: 20px;
-  margin-left: 20px;
-  list-style-type: none;
+  margin-left: 20px !important;
 }
 
 .project {

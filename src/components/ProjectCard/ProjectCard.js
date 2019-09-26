@@ -28,7 +28,7 @@ export const ProjectCard = params => {
                 in ad aliqua aute dolore officia sunt. Esse nulla ex
                 reprehenderit incididunt Lorem.
               </p>
-              <h3 className="h3--overview">_Development:</h3>
+              <h3 className="h3--overview">_Technical:</h3>
               <Container className="technical">
                 <Row>
                   <Col>

@@ -7,47 +7,7 @@ $fgWhite: #f8f8f8;
 .h1--bg {
   color: $darkGray;
 }
-.h3--overview {
-}
-.project {
-  border-radius: 20px;
-  position: relative;
-  z-index: 100;
-  background: $fgWhite;
-  padding: 0 !important;
-  margin-bottom: 50px;
-  overflow: hidden;
-  h3 {
-    font-weight: 900;
-  }
-  .thumbnail {
-    width: 300px;
-  }
-  &--leftTopCut {
-    clip-path: polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
-  }
-  &__card {
-    padding: 30px;
-    padding-bottom: 0;
-    border: none !important;
-    background: transparent !important;
-  }
-  &__title {
-    font-size: 2em !important;
-    color: $white;
-    font-weight: bold !important;
-    margin: 10px;
-    background: $darkGray;
-  }
-  &__overview {
-    height: 100%;
-    background: $darkGray;
-    color: $white;
-    padding: 40px;
-    padding-left: 30px !important;
-    padding-right: 40px !important;
-  }
-}
+
 // .card__title {
 //   font-weight: bold;
 // }
