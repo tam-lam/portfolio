@@ -25,13 +25,13 @@ export const ProjectCard = params => {
                 <Row className="links ">
                   <Col className="text-center">
                     <a href="#">
-                      <Image className="glyph" src={gitIcon} fluid />
+                      <Image className="glyph" src={liveIcon} />
                       Live Preview
                     </a>
                   </Col>
                   <Col className="text-center">
                     <a href="#">
-                      <Image className="glyph" src={liveIcon} />
+                      <Image className="glyph" src={gitIcon} fluid />
                       View Source
                     </a>
                   </Col>
