@@ -11,7 +11,7 @@ export const ProjectCard = params => {
     <React.Fragment>
       <Container fuild="true" className="project project--leftTopCut shadow-sm">
         <Row noGutters="true">
-          <Col sm={4}>
+          <Col md={4}>
             <Card className="project__card ">
               <h1 className="project__title">_Car sharing app</h1>
 
@@ -19,7 +19,7 @@ export const ProjectCard = params => {
               <Card.Body></Card.Body>
             </Card>
           </Col>
-          <Col sm={8}>
+          <Col md={8}>
             <Container fuild="true" className="project__overview shadow-lg ">
               <h3 className="h3--overview">_Overview</h3>
               <p>
@@ -29,28 +29,31 @@ export const ProjectCard = params => {
                 reprehenderit incididunt Lorem.
               </p>
               <h3 className="h3--overview">_Development:</h3>
-              <Row>
-                <Col>
-                  <ul>
-                    <li>React JS, Redux</li>
-                    <li>Node JS, Express</li>
-                    <li>Jest</li>
-                  </ul>
-                </Col>
-                <Col>
-                  <ul>
-                    <li>SCRUM development</li>
-                    <li>Team of 4</li>
-                  </ul>
-                </Col>
-              </Row>
+              <Container className="technical">
+                <Row>
+                  <Col>
+                    <ul>
+                      <li>React JS, Redux</li>
+                      <li>Node JS, Express</li>
+                      <li>Jest</li>
+                    </ul>
+                  </Col>
+                  <Col>
+                    <ul>
+                      <li>SCRUM development</li>
+                      <li>Team of 4</li>
+                    </ul>
+                  </Col>
+                </Row>
+              </Container>
+
               <h3 className="h3--overview">_Features:</h3>
-              <ul>
-                <li>Secure authentication/registration</li>
-                <li>Working with Google Geolocation APIs</li>
-                <li>User distance calculation and services</li>
-                <li>PayPal sandbox transactions support</li>
-              </ul>
+              <Container className="features">
+                <p>Secure authentication/registration</p>
+                <p>Working with Google Geolocation APIs</p>
+                <p>User distance calculation and services</p>
+                <p>PayPal sandbox transactions support</p>
+              </Container>
             </Container>
           </Col>
         </Row>

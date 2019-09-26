@@ -1,0 +1,62 @@
+.features {
+  border-left: 1px solid white;
+  line-height: 1;
+  padding-left: 10px;
+  padding-right: 30px;
+  margin-left: 20px;
+}
+
+.features ul {
+  border-left: 1px solid white;
+  padding-left: 20px;
+  margin-left: 20px;
+  list-style-type: none;
+}
+
+.project {
+  border-radius: 20px;
+  position: relative;
+  z-index: 100;
+  background: #f8f8f8;
+  padding: 0 !important;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.project h3 {
+  font-weight: 900;
+}
+
+.project .thumbnail {
+  width: 300px;
+}
+
+.project--leftTopCut {
+  -webkit-clip-path: polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
+}
+
+.project__card {
+  padding: 30px;
+  padding-bottom: 0;
+  border: none !important;
+  background: transparent !important;
+}
+
+.project__title {
+  font-size: 2em !important;
+  color: #f0f0f0;
+  font-weight: bold !important;
+  margin: 10px;
+  background: #303030;
+}
+
+.project__overview {
+  height: 100%;
+  background: #303030;
+  color: #f0f0f0;
+  padding: 40px;
+  padding-left: 30px !important;
+  padding-right: 40px !important;
+}
+/*# sourceMappingURL=projectCard.css.map */
