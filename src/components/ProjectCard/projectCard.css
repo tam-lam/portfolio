@@ -2,6 +2,10 @@
   padding: 0 !important;
 }
 
+div.text-center.col {
+  padding: 5px;
+}
+
 .features {
   border-left: 1px solid #f0f0f0;
   line-height: 1;
@@ -62,7 +66,6 @@
 }
 
 .project .links .col {
-  padding-bottom: 20px;
   -ms-flex-line-pack: center;
       align-content: center;
 }

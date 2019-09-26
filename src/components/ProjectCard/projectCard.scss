@@ -7,6 +7,12 @@ $fgWhite: #f8f8f8;
 .technical {
   padding: 0 !important;
 }
+
+div.text-center.col {
+  padding: 5px;
+}
+.text-center {
+}
 .features {
   border-left: 1px solid $white;
   line-height: 1;
@@ -40,6 +46,7 @@ $fgWhite: #f8f8f8;
     border: none !important;
     background: transparent !important;
   }
+
   &__title {
     font-size: 2em !important;
     color: $white;
@@ -57,7 +64,7 @@ $fgWhite: #f8f8f8;
   }
   .links {
     .col {
-      padding-bottom: 20px;
+      // padding-bottom: 20px;
       align-content: center;
     }
   }

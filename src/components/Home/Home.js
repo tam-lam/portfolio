@@ -21,7 +21,7 @@ class Home extends Component {
       <React.Fragment>
         <Container className="mainBody nopadding" fluid="true">
           <div
-            className="rellax object object--foreground shadow-lg"
+            className="rellax object object--foreground shadow-lg d-none d-md-block"
             data-rellax-speed="-3"
           ></div>
           <Banner></Banner>
