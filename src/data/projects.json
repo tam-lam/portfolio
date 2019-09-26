@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Car sharing app",
+    "image": "carSharing",
+    "livePreview": "https://damp-wildwood-73011.herokuapp.com",
+    "github": "",
+    "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
+    "technical": ["React JS, Redux", "NodeJS"],
+    "features": [
+      "Secure authentication/registration",
+      "Working with Google Geolocation APIs",
+      "User distance calculation and services",
+      "PayPal sandbox transactions support"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Car sharing app",
+    "image": "time",
+    "livePreview": "",
+    "github": "",
+    "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
+    "technical": ["React JS, Redux", "NodeJS"],
+    "features": [
+      "Secure authentication/registration",
+      "Working with Google Geolocation APIs",
+      "User distance calculation and services",
+      "PayPal sandbox transactions support"
+    ]
+  }
+]

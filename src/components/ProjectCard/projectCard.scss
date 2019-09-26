@@ -54,6 +54,9 @@ div.text-center.col {
     margin: 10px;
     background: $darkGray;
   }
+  &__title::before {
+    content: "_";
+  }
   &__overview {
     height: 100%;
     background: $darkGray;

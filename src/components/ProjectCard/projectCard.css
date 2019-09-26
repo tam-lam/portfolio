@@ -56,6 +56,10 @@ div.text-center.col {
   background: #303030;
 }
 
+.project__title::before {
+  content: "_";
+}
+
 .project__overview {
   height: 100%;
   background: #303030;

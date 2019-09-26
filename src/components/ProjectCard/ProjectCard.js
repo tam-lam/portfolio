@@ -7,30 +7,48 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Button from "react-bootstrap/Button";
-
 import gitIcon from "../../assets/images/github.png";
 import liveIcon from "../../assets/images/live.png";
-export const ProjectCard = params => {
+
+const getPreviewImg = imgName => {
+  switch (imgName) {
+    case "carSharing":
+      return carSharing;
+    case "time":
+      return time;
+    case "lazymachine":
+      return lazymachine;
+    default:
+      return carSharing;
+  }
+};
+
+export const ProjectCard = props => {
+  const project = props.project;
+  var previewImage = getPreviewImg(project.image);
+  var technicalCols = chunkArray(project.technical, 2);
+  //Getting technical li
   return (
     <React.Fragment>
       <Container fuild="true" className="project project--leftTopCut shadow-sm">
         <Row noGutters="true">
           <Col md={4}>
             <Card className="project__card ">
-              <h1 className="project__title">_Car sharing app</h1>
+              <h1 className="project__title">{project.name}</h1>
 
-              <Card.Img variant="top" src={carSharing} />
+              <Card.Img variant="top" src={previewImage} />
               <Card.Body>
                 <Row className="links ">
+                  {project.livePreview !== "" && (
+                    <Col className="text-center">
+                      <a href={project.livePreview} target="_blank">
+                        <Image className="glyph" src={liveIcon} />
+                        Live Preview
+                      </a>
+                    </Col>
+                  )}
                   <Col className="text-center">
-                    <a href="#">
-                      <Image className="glyph" src={liveIcon} />
-                      Live Preview
-                    </a>
-                  </Col>
-                  <Col className="text-center">
-                    <a href="#">
+                    <a href={project.github}>
                       <Image className="glyph" src={gitIcon} fluid />
                       View Source
                     </a>
@@ -42,12 +60,7 @@ export const ProjectCard = params => {
           <Col md={8}>
             <Container fuild="true" className="project__overview shadow-lg ">
               <h3 className="h3--overview">_Overview</h3>
-              <p>
-                Ea dolore ullamco cillum elit adipisicing aute sint cillum
-                cillum exercitation ut. Dolore nulla dolore do irure Lorem. Ut
-                in ad aliqua aute dolore officia sunt. Esse nulla ex
-                reprehenderit incididunt Lorem.
-              </p>
+              <p>{project.overview}</p>
               <h3 className="h3--overview">_Technical:</h3>
               <Container className="technical">
                 <Row>
@@ -81,3 +94,15 @@ export const ProjectCard = params => {
     </React.Fragment>
   );
 };
+function chunkArray(myArray, chunk_size) {
+  var index = 0;
+  var arrayLength = myArray.length;
+  var tempArray = [];
+
+  for (index = 0; index < arrayLength; index += chunk_size) {
+    var myChunk = myArray.slice(index, index + chunk_size);
+    tempArray.push(myChunk);
+  }
+
+  return tempArray;
+}
