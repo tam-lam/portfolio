@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ProjectCard } from "../ProjectCard/ProjectCard";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import Fade from "react-reveal/Fade";
 import ProjectData from "../../data/projects.json";
 class Projects extends Component {

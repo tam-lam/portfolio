@@ -6,6 +6,13 @@ div.text-center.col {
   padding: 5px;
 }
 
+.technical ul {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
 .features {
   border-left: 1px solid #f0f0f0;
   line-height: 1;
