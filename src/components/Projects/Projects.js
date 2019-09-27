@@ -14,11 +14,8 @@ class Projects extends Component {
         >
           Projects
         </h1>
-
-        {/* <ProjectCard></ProjectCard> */}
-        {/* <ProjectCard></ProjectCard> */}
         <Fade right>
-          {ProjectData.map((project, index) => {
+          {ProjectData.map(project => {
             return <ProjectCard project={project}></ProjectCard>;
           })}
         </Fade>

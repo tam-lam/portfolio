@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import carSharing from "../../assets/images/carSharing.png";
 import time from "../../assets/images/time.png";
 import lazymachine from "../../assets/images/lazymachine.png";
+import portfolio from "../../assets/images/portfolio.png";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -15,6 +16,8 @@ class ProjectCard extends Component {
   state = {};
   getPreviewImg = imgName => {
     switch (imgName) {
+      case Constants.PORTFOLIO:
+        return portfolio;
       case Constants.CAR_SHARING:
         return carSharing;
       case Constants.TIME:
@@ -32,13 +35,23 @@ class ProjectCard extends Component {
     });
     return list;
   }
-  renderFeatures(featureList) {
-    let paragraphs = [];
-    featureList.forEach(element => {
-      paragraphs.push(<p>{element}</p>);
-    });
-    return paragraphs;
+
+  renderFeature(project) {
+    if (project.hasOwnProperty("features")) {
+      var featureList = project.features;
+      let paragraphs = [];
+      featureList.forEach(element => {
+        paragraphs.push(<p>{element}</p>);
+      });
+      return (
+        <React.Fragment>
+          <h3 className="h3--overview">_Features:</h3>
+          <Container className="features">{paragraphs}</Container>
+        </React.Fragment>
+      );
+    }
   }
+
   getCustomCardClassName(id) {
     var className = "project shadow-sm ";
     className += id == Constants.FIRST_PROJECT_ID ? "project--leftTopCut" : "";
@@ -49,6 +62,7 @@ class ProjectCard extends Component {
   render() {
     const project = this.props.project;
     var previewImage = this.getPreviewImg(project.image);
+    console.log(project.hasOwnProperty("features"));
     return (
       <React.Fragment>
         <Container
@@ -71,7 +85,7 @@ class ProjectCard extends Component {
                       </Col>
                     )}
                     <Col className="text-center">
-                      <a href={project.github}>
+                      <a target="_blank" href={project.github}>
                         <Image className="glyph" src={gitIcon} fluid />
                         View Source
                       </a>
@@ -88,11 +102,7 @@ class ProjectCard extends Component {
                 <Container className="technical">
                   <ul>{this.renderTechnical(project.technical)}</ul>
                 </Container>
-
-                <h3 className="h3--overview">_Features:</h3>
-                <Container className="features">
-                  {this.renderFeatures(project.features)}
-                </Container>
+                {this.renderFeature(project)}
               </Container>
             </Col>
           </Row>

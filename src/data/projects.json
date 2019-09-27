@@ -1,31 +1,19 @@
 [
   {
     "id": 1,
-    "name": "Car sharing app",
-    "image": "carSharing",
-    "livePreview": "https://damp-wildwood-73011.herokuapp.com",
-    "github": "",
+    "name": "Portfolio site",
+    "image": "portfolio",
+    "livePreview": "",
+    "github": "https://github.com/tam-lam/portfolio",
     "overview": "Amet amet anim ea culpa minim minim et. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui.tion qui ullamco.",
-    "technical": [
-      "React JS, Redux",
-      "NodeJS, Express",
-      "Jest",
-      "SCRUM development",
-      "Team of 4"
-    ],
-    "features": [
-      "Secure authentication/registration",
-      "Working with Google Geolocation APIs",
-      "User distance calculation and services",
-      "PayPal sandbox transactions support"
-    ]
+    "technical": ["React JS", "NodeJS", "HTML,CSS", "SASS, Jquery", "JSON"]
   },
   {
     "id": 2,
     "name": "Car sharing app",
-    "image": "time",
-    "livePreview": "",
-    "github": "",
+    "image": "carSharing",
+    "livePreview": "https://damp-wildwood-73011.herokuapp.com",
+    "github": "https://github.com/tam-lam/homyscar",
     "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
     "technical": ["React JS, Redux", "NodeJS, Express"],
     "features": [
@@ -38,32 +26,38 @@
 
   {
     "id": 3,
-    "name": "Car sharing app",
+    "name": "Stopwatch IOS app",
     "image": "time",
     "livePreview": "",
-    "github": "",
+    "github": "https://github.com/tam-lam/T1m3.",
     "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
-    "technical": ["React JS, Redux", "NodeJS, Express"],
+    "technical": [
+      "Swift",
+      "CoreData",
+      "MVC",
+      "Cocoapods",
+      "Third party APIs",
+      "Delegation, Notification, Singleton patterns",
+      "Adaptive layout"
+    ],
     "features": [
-      "Secure authentication/registration",
-      "Working with Google Geolocation APIs",
-      "User distance calculation and services",
-      "PayPal sandbox transactions support"
+      "Amet amet anim ea culpa minim minim et",
+      "Amet amet anim ea culpa minim minim et",
+      "Amet amet anim ea culpa minim minim et"
     ]
   },
   {
     "id": 4,
-    "name": "Car sharing app",
-    "image": "time",
+    "name": "Timer app",
+    "image": "lazyMachine",
     "livePreview": "",
     "github": "",
     "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
-    "technical": ["React JS, Redux", "NodeJS, Express"],
-    "features": [
-      "Secure authentication/registration",
-      "Working with Google Geolocation APIs",
-      "User distance calculation and services",
-      "PayPal sandbox transactions support"
+    "technical": [
+      "Electron JS",
+      "HTML, CSS",
+      "Python, Powershell scripting",
+      "MAC OS and Windows 10"
     ]
   }
 ]
