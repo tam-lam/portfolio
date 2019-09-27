@@ -20,34 +20,19 @@
 }
 
 .mainBody .banner .banner__h1 {
-  margin-top: 20px;
+  margin-top: 30px;
+  -webkit-animation-name: flashing;
+          animation-name: flashing;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   position: relative;
   color: #f0f0f0;
   font-size: 8rem;
   z-index: 100;
-}
-
-@media only screen and (max-width: 600px) {
-  .mainBody .banner {
-    height: 400px;
-  }
-  .mainBody .banner__h1 {
-    left: 0% !important;
-    font-size: 4.5em !important;
-  }
-  .mainBody .object--background {
-    width: 500px !important;
-    height: 500px !important;
-  }
-  .mainBody .object--midground {
-    width: 200px !important;
-    height: 200px !important;
-  }
-  .mainBody .object--foreground {
-    top: 300px !important;
-    width: 50px !important;
-    height: 50px !important;
-  }
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .mainBody .object {
@@ -118,6 +103,29 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 400px !important;
+  }
+  .banner__h1 {
+    left: 0% !important;
+    font-size: 4.5em !important;
+  }
+  .object--background {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  .object--midground {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .object--foreground {
+    top: 300px !important;
+    width: 50px !important;
+    height: 50px !important;
   }
 }
 /*# sourceMappingURL=home.css.map */

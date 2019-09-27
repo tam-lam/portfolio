@@ -11,7 +11,6 @@ $white: #f0f0f0;
 .mainBody {
   min-height: 2000px;
   position: relative;
-  // background: $white;
   .banner {
     margin-bottom: 20px;
     overflow: hidden;
@@ -23,39 +22,18 @@ $white: #f0f0f0;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
 
     .banner__h1 {
-      margin-top: 20px;
-      // left: 20%;
+      margin-top: 30px;
+      animation-name: flashing;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
       position: relative;
       color: $white;
       font-size: 8rem;
       z-index: 100;
-      // animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
     }
   }
-  @media only screen and (max-width: 600px) {
-    .banner {
-      height: 400px;
-    }
-    .banner__h1 {
-      left: 0% !important;
-      font-size: 4.5em !important;
-    }
-    .object {
-      &--background {
-        width: 500px !important;
-        height: 500px !important;
-      }
-      &--midground {
-        width: 200px !important;
-        height: 200px !important;
-      }
-      &--foreground {
-        top: 300px !important;
-        width: 50px !important;
-        height: 50px !important;
-      }
-    }
-  }
+
   .object {
     border-radius: 50%;
     position: absolute;
@@ -110,5 +88,29 @@ $white: #f0f0f0;
   }
   to {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .banner {
+    height: 400px !important;
+  }
+  .banner__h1 {
+    left: 0% !important;
+    font-size: 4.5em !important;
+  }
+  .object {
+    &--background {
+      width: 500px !important;
+      height: 500px !important;
+    }
+    &--midground {
+      width: 200px !important;
+      height: 200px !important;
+    }
+    &--foreground {
+      top: 300px !important;
+      width: 50px !important;
+      height: 50px !important;
+    }
   }
 }

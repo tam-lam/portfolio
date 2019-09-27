@@ -3,9 +3,9 @@ import Container from "react-bootstrap/Container";
 
 function Banner() {
   return (
-    <Container className="banner" fluid="true">
+    <Container className="banner" fluid="true" id="banner">
       <Container className="container--banner">
-        <h1 className="rellax banner__h1 shadown-lg" data-rellax-speed="-7">
+        <h1 className="rellax banner__h1 shadown-lg" data-rellax-speed="-5">
           Hi,
           <br />
           I'm <span className="span--hightlight">Tam</span>,

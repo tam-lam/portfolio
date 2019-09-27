@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Rellax from "rellax";
 import CenteredTabs from "../TabPanel/TabPanel";
 import Banner from "../Banner/Banner";
-
+import { ScrollUpButton } from "../ScrollUpButton/ScrollUpButton";
 class Home extends Component {
   state = {};
   componentDidMount() {
@@ -20,7 +20,6 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Container className="mainBody nopadding" fluid="true">
-          {/* d-none d-md-block */}
           <div
             className="rellax object object--foreground shadow-lg "
             data-rellax-speed="-3"
@@ -29,12 +28,7 @@ class Home extends Component {
           <Container>
             <CenteredTabs className="shadow-lg"></CenteredTabs>
           </Container>
-          {/* <div
-            className="rellax objectHolder objectHolder--bottom"
-            data-rellax-speed="-3"
-          >
-            <div className="object object--bottom shadown-lg "></div>
-          </div> */}
+          <ScrollUpButton></ScrollUpButton>
         </Container>
       </React.Fragment>
     );

@@ -2,6 +2,8 @@
 @import "components/TabPanel/tabPanel.css";
 @import "components/Projects/projects.css";
 @import "components/ProjectCard/projectCard.css";
+@import "components/ScrollUpButton/scrollUpButton.css";
+
 .App {
   overflow: hidden;
 }

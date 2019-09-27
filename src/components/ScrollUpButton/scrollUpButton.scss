@@ -1,0 +1,26 @@
+$black: #282828;
+$darkGray: #303030;
+$midGray: #383838;
+$lightGray: #484848;
+$white: #f0f0f0;
+$fgWhite: #f8f8f8;
+.scrollUpBtn {
+  position: relative;
+  top: 0;
+  margin-bottom: 30px;
+  background: $white !important;
+  outline: none;
+  border-radius: 20px;
+  transition: 0.3s;
+  color: #303030;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+}
+.scrollUpBtn:hover {
+  top: -5px;
+}
+.scrollUpBtn:focus {
+  outline: none;
+}

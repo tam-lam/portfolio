@@ -10,6 +10,7 @@
     "react-dom": "^16.9.0",
     "react-reveal": "^1.2.2",
     "react-scripts": "3.1.1",
+    "react-scroll": "^1.7.14",
     "rellax": "^1.10.0"
   },
   "scripts": {

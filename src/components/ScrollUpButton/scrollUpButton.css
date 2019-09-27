@@ -1,0 +1,24 @@
+.scrollUpBtn {
+  position: relative;
+  top: 0;
+  margin-bottom: 30px;
+  background: #f0f0f0 !important;
+  outline: none;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #303030;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+}
+
+.scrollUpBtn:hover {
+  top: -5px;
+}
+
+.scrollUpBtn:focus {
+  outline: none;
+}
+/*# sourceMappingURL=scrollUpButton.css.map */
