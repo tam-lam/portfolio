@@ -3,7 +3,6 @@
     "id": 1,
     "name": "Portfolio site",
     "image": "portfolio",
-    "livePreview": "",
     "github": "https://github.com/tam-lam/portfolio",
     "overview": "Amet amet anim ea culpa minim minim et. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui.tion qui ullamco.",
     "technical": ["React JS", "NodeJS", "HTML,CSS", "SASS, Jquery", "JSON"]
@@ -28,7 +27,6 @@
     "id": 3,
     "name": "Stopwatch IOS app",
     "image": "time",
-    "livePreview": "",
     "github": "https://github.com/tam-lam/T1m3.",
     "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
     "technical": [
@@ -50,8 +48,8 @@
     "id": 4,
     "name": "Timer app",
     "image": "lazyMachine",
-    "livePreview": "",
-    "github": "",
+    "livePreview": "https://github.com/tam-lam/lazy-machine/releases",
+    "github": "https://github.com/tam-lam/lazy-machine",
     "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
     "technical": [
       "Electron JS",

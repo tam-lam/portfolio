@@ -6,6 +6,10 @@ class Projects extends Component {
   state = {};
 
   render() {
+    var style = {
+      position: "relative",
+      zIndex: "100"
+    };
     return (
       <React.Fragment>
         <h1
@@ -14,11 +18,14 @@ class Projects extends Component {
         >
           Projects
         </h1>
-        <Fade right>
+        <Fade style={style} right>
           {ProjectData.map(project => {
             return <ProjectCard project={project}></ProjectCard>;
           })}
         </Fade>
+        <div className="objectHolder objectHolder--bottom">
+          <div className="object object--bottom shadow-lg"></div>
+        </div>
       </React.Fragment>
     );
   }

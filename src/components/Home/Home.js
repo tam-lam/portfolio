@@ -28,6 +28,12 @@ class Home extends Component {
           <Container>
             <CenteredTabs className="shadow-lg"></CenteredTabs>
           </Container>
+          <div
+            className="rellax objectHolder objectHolder--bottom"
+            data-rellax-speed="-3"
+          >
+            <div className="object object--bottom shadown-lg "></div>
+          </div>
         </Container>
       </React.Fragment>
     );

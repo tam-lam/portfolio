@@ -2,3 +2,6 @@
 @import "components/TabPanel/tabPanel.css";
 @import "components/Projects/projects.css";
 @import "components/ProjectCard/projectCard.css";
+.App {
+  overflow: hidden;
+}

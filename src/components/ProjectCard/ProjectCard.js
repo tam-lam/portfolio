@@ -53,16 +53,19 @@ class ProjectCard extends Component {
   }
 
   getCustomCardClassName(id) {
-    var className = "project shadow-sm ";
-    className += id == Constants.FIRST_PROJECT_ID ? "project--leftTopCut" : "";
-    className +=
-      id == Constants.LAST_PROJECT_ID ? "project--leftBottomCut" : "";
-    return className;
+    // var className = "project shadow-lg ";
+    switch (id) {
+      case Constants.FIRST_PROJECT_ID:
+        return "project shadow-sm project--leftTopCut";
+      case Constants.LAST_PROJECT_ID:
+        return "project shadow-sm project--leftBottomCut";
+      default:
+        return "project shadow-lg";
+    }
   }
   render() {
     const project = this.props.project;
     var previewImage = this.getPreviewImg(project.image);
-    console.log(project.hasOwnProperty("features"));
     return (
       <React.Fragment>
         <Container
@@ -76,7 +79,7 @@ class ProjectCard extends Component {
                 <Card.Img variant="top" src={previewImage} />
                 <Card.Body>
                   <Row className="links ">
-                    {project.livePreview !== "" && (
+                    {project.hasOwnProperty("livePreview") && (
                       <Col className="text-center">
                         <a href={project.livePreview} target="_blank">
                           <Image className="glyph" src={liveIcon} />
