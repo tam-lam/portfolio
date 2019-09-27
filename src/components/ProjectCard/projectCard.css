@@ -48,6 +48,11 @@ div.text-center.col {
           clip-path: polygon(80% 0, 100% 15%, 100% 100%, 0 100%, 0 0);
 }
 
+.project--leftBottomCut {
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
+}
+
 .project__card {
   padding: 30px;
   padding-bottom: 0;

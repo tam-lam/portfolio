@@ -9,22 +9,22 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import gitIcon from "../../assets/images/github.png";
 import liveIcon from "../../assets/images/live.png";
-
-const getPreviewImg = imgName => {
-  switch (imgName) {
-    case "carSharing":
-      return carSharing;
-    case "time":
-      return time;
-    case "lazymachine":
-      return lazymachine;
-    default:
-      return carSharing;
-  }
-};
+import * as Constants from "../../constants/constants";
 
 class ProjectCard extends Component {
   state = {};
+  getPreviewImg = imgName => {
+    switch (imgName) {
+      case Constants.CAR_SHARING:
+        return carSharing;
+      case Constants.TIME:
+        return time;
+      case Constants.LAZY_MACHINE:
+        return lazymachine;
+      default:
+        return carSharing;
+    }
+  };
   renderTechnical(techList) {
     let list = [];
     techList.forEach(element => {
@@ -39,14 +39,21 @@ class ProjectCard extends Component {
     });
     return paragraphs;
   }
+  getCustomCardClassName(id) {
+    var className = "project shadow-sm ";
+    className += id == Constants.FIRST_PROJECT_ID ? "project--leftTopCut" : "";
+    className +=
+      id == Constants.LAST_PROJECT_ID ? "project--leftBottomCut" : "";
+    return className;
+  }
   render() {
     const project = this.props.project;
-    var previewImage = getPreviewImg(project.image);
+    var previewImage = this.getPreviewImg(project.image);
     return (
       <React.Fragment>
         <Container
           fuild="true"
-          className="project project--leftTopCut shadow-sm"
+          className={this.getCustomCardClassName(project.id)}
         >
           <Row noGutters="true">
             <Col md={4}>
