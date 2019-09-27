@@ -20,20 +20,21 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Container className="mainBody nopadding" fluid="true">
+          {/* d-none d-md-block */}
           <div
-            className="rellax object object--foreground shadow-lg d-none d-md-block"
+            className="rellax object object--foreground shadow-lg "
             data-rellax-speed="-3"
           ></div>
           <Banner></Banner>
           <Container>
             <CenteredTabs className="shadow-lg"></CenteredTabs>
           </Container>
-          <div
+          {/* <div
             className="rellax objectHolder objectHolder--bottom"
             data-rellax-speed="-3"
           >
             <div className="object object--bottom shadown-lg "></div>
-          </div>
+          </div> */}
         </Container>
       </React.Fragment>
     );

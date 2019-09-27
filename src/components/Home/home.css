@@ -11,7 +11,7 @@
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #282828;
-  min-height: 700px;
+  height: 700px;
   position: relative;
   padding: 0 !important;
   z-index: 0;
@@ -20,18 +20,34 @@
 }
 
 .mainBody .banner .banner__h1 {
-  position: absolute;
+  margin-top: 20px;
+  position: relative;
   color: #f0f0f0;
   font-size: 8rem;
-  left: 25%;
-  top: 10%;
   z-index: 100;
-  -webkit-animation-name: flashing;
-          animation-name: flashing;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainBody .banner {
+    height: 400px;
+  }
+  .mainBody .banner__h1 {
+    left: 0% !important;
+    font-size: 4.5em !important;
+  }
+  .mainBody .object--background {
+    width: 500px !important;
+    height: 500px !important;
+  }
+  .mainBody .object--midground {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .mainBody .object--foreground {
+    top: 300px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
 }
 
 .mainBody .object {

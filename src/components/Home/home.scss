@@ -16,28 +16,45 @@ $white: #f0f0f0;
     margin-bottom: 20px;
     overflow: hidden;
     background-color: $black;
-    min-height: 700px;
+    height: 700px;
     position: relative;
     padding: 0 !important;
     z-index: 0;
     clip-path: polygon(0 0, 100% 0, 100% 88%, 66% 100%, 0 78%);
 
     .banner__h1 {
-      position: absolute;
+      margin-top: 20px;
+      // left: 20%;
+      position: relative;
       color: $white;
       font-size: 8rem;
-      left: 25%;
-      top: 10%;
       z-index: 100;
-      animation-name: flashing;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-
       // animation-timing-function: ease-in-out;
     }
-    // .banner__h1:hover {
-    //   font-size: 1em;
-    // }
+  }
+  @media only screen and (max-width: 600px) {
+    .banner {
+      height: 400px;
+    }
+    .banner__h1 {
+      left: 0% !important;
+      font-size: 4.5em !important;
+    }
+    .object {
+      &--background {
+        width: 500px !important;
+        height: 500px !important;
+      }
+      &--midground {
+        width: 200px !important;
+        height: 200px !important;
+      }
+      &--foreground {
+        top: 300px !important;
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }
   }
   .object {
     border-radius: 50%;
