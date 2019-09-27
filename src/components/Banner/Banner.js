@@ -5,7 +5,7 @@ function Banner() {
   return (
     <Container className="banner" fluid="true" id="banner">
       <Container className="container--banner">
-        <h1 className="rellax banner__h1 shadown-lg" data-rellax-speed="-5">
+        <h1 className="rellax banner__h1 shadown-lg" data-rellax-speed="-6">
           Hi,
           <br />
           I'm <span className="span--hightlight">Tam</span>,

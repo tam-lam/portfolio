@@ -8,7 +8,7 @@ class Home extends Component {
   state = {};
   componentDidMount() {
     var rellax = new Rellax(".rellax", {
-      speed: 1,
+      speed: 2,
       center: false,
       wrapper: null,
       round: true,

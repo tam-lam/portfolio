@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Fade from "react-reveal/Fade";
 import ProjectData from "../../data/projects.json";
-import { Container } from "@material-ui/core";
 class Projects extends Component {
   state = {};
 
@@ -25,7 +24,10 @@ class Projects extends Component {
           })}
         </Fade>
 
-        <div className="objectHolder objectHolder--bottom">
+        <div
+          className="rellax objectHolder objectHolder--bottom"
+          data-rellax-speed="3"
+        >
           <div className="object object--bottom shadow-lg"></div>
         </div>
       </React.Fragment>
