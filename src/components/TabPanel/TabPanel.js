@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
@@ -8,11 +8,6 @@ import Projects from "../Projects/Projects";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 
-const useStyles = makeStyles({
-  root: {
-    flexGrow: 1
-  }
-});
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
@@ -37,7 +32,6 @@ function TabPanel(props) {
 }
 
 export default function CenteredTabs() {
-  const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
   function handleChange(event, newValue) {

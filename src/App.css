@@ -3,6 +3,7 @@
 @import "components/Projects/projects.css";
 @import "components/ProjectCard/projectCard.css";
 @import "components/ScrollUpButton/scrollUpButton.css";
+@import "components/TabTitle/tabTitle.css";
 
 .App {
   overflow: hidden;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,cAAc,EAAE,QAAQ;EACxB,kBAAkB,EAAE,EAAE;EACtB,mBAAmB,EAAE,QAAQ;EAC7B,yBAAyB,EAAE,WAAW;CACvC;;AACD,UAAU,CAAV,QAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;;EAEZ,EAAE;IACA,OAAO,EAAE,CAAC",
+    "sources": [
+        "tabTitle.scss"
+    ],
+    "names": [],
+    "file": "tabTitle.css"
+}

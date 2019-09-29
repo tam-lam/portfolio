@@ -24,11 +24,11 @@ class Home extends Component {
             className="rellax object object--foreground shadow-lg "
             data-rellax-speed="-3"
           ></div>
-          <Banner></Banner>
+          <Banner />
           <Container>
             <CenteredTabs className="shadow-lg"></CenteredTabs>
           </Container>
-          <ScrollUpButton></ScrollUpButton>
+          <ScrollUpButton />
         </Container>
       </React.Fragment>
     );

@@ -9,7 +9,6 @@ export const ScrollUpButton = params => {
   return (
     <Container className="text-center">
       <Button bsPrefix="scrollUpBtn shadow">
-        <Image src={upArrow} style={{ opacity: 0.7 }} className="glyph"></Image>
         <Link
           activeClass="active"
           to="banner"
@@ -18,7 +17,11 @@ export const ScrollUpButton = params => {
           offset={50}
           duration={500}
         >
-          {" "}
+          <Image
+            src={upArrow}
+            style={{ opacity: 0.7 }}
+            className="glyph"
+          ></Image>{" "}
           Back to top
         </Link>
       </Button>

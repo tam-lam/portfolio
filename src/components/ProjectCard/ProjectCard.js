@@ -81,14 +81,22 @@ class ProjectCard extends Component {
                   <Row className="links ">
                     {project.hasOwnProperty("livePreview") && (
                       <Col className="text-center">
-                        <a href={project.livePreview} target="_blank">
+                        <a
+                          href={project.livePreview}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <Image className="glyph" src={liveIcon} />
                           Live Preview
                         </a>
                       </Col>
                     )}
                     <Col className="text-center">
-                      <a target="_blank" href={project.github}>
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <Image className="glyph" src={gitIcon} fluid />
                         View Source
                       </a>

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import Fade from "react-reveal/Fade";
 import ProjectData from "../../data/projects.json";
+import { TabTitle } from "../TabTitle/TabTitle";
 class Projects extends Component {
   state = {};
 
@@ -12,12 +13,7 @@ class Projects extends Component {
     };
     return (
       <React.Fragment>
-        <h1
-          className="rellax display-3 h1--bg font-weight-bold"
-          data-rellax-speed="-1"
-        >
-          Projects
-        </h1>
+        <TabTitle title="Projects" />
         <Fade style={style} right>
           {ProjectData.map(project => {
             return <ProjectCard project={project}></ProjectCard>;
