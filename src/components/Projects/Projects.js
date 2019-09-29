@@ -15,8 +15,8 @@ class Projects extends Component {
       <React.Fragment>
         <TabTitle title="Projects" />
         <Fade style={style} right>
-          {ProjectData.map(project => {
-            return <ProjectCard project={project}></ProjectCard>;
+          {ProjectData.map((project, index) => {
+            return <ProjectCard key={index} project={project}></ProjectCard>;
           })}
         </Fade>
 

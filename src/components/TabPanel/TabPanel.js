@@ -44,9 +44,9 @@ export default function CenteredTabs() {
         value={value}
         onChange={handleChange}
         indicatorColor="primary"
-        textColor="light"
+        textColor="primary"
         centered
-        classname="test"
+        className="test"
       >
         <StyledTab label="Projects" {...a11yProps(0)}></StyledTab>
         <StyledTab label="About" {...a11yProps(1)}></StyledTab>

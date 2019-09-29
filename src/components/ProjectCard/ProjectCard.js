@@ -30,8 +30,8 @@ class ProjectCard extends Component {
   };
   renderTechnical(techList) {
     let list = [];
-    techList.forEach(element => {
-      list.push(<li>{element}</li>);
+    techList.forEach((element, index) => {
+      list.push(<li key={index}>{element}</li>);
     });
     return list;
   }
@@ -40,8 +40,8 @@ class ProjectCard extends Component {
     if (project.hasOwnProperty("features")) {
       var featureList = project.features;
       let paragraphs = [];
-      featureList.forEach(element => {
-        paragraphs.push(<p>{element}</p>);
+      featureList.forEach((element, index) => {
+        paragraphs.push(<p key={index}>{element}</p>);
       });
       return (
         <React.Fragment>

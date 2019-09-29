@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import * as Constants from "../../constants/constants";
+
 class TypedText extends Component {
   state = {};
   componentDidMount() {
     let typed = "";
     const element = document.querySelector(".typity");
+    var lastPun = "";
     function startType(pun, index) {
       if (index < pun.length) {
         typed += pun.charAt(index);
@@ -21,29 +24,27 @@ class TypedText extends Component {
           element.classList.remove("highlight");
           typed = "";
           element.innerHTML = typed;
-          startType(getRandomPun(), 0);
+          lastPun = pun;
+          startType(getRandomPun(lastPun), 0);
         }, 2000);
       }
     }
 
-    function getRandomPun() {
-      const puns = [
-        "Grad student",
-        "Developer",
-        "Program builder",
-        "Code craftsman"
-      ];
-      const index = Math.floor(Math.random() * puns.length);
-
+    function getRandomPun(lastPun) {
+      const puns = Constants.TYPED_TEXT;
+      var index = Math.floor(Math.random() * puns.length);
+      while (puns[index] === lastPun) {
+        index = Math.floor(Math.random() * puns.length);
+      }
       return puns[index];
     }
 
-    startType(getRandomPun(), 0);
+    startType(getRandomPun(lastPun), 0);
   }
   render() {
     return (
       <React.Fragment>
-        <span class="typity"></span>
+        <span className="typity"></span>
       </React.Fragment>
     );
   }
