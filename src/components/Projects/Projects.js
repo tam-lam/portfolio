@@ -12,7 +12,7 @@ class Projects extends Component {
       zIndex: "100"
     };
     return (
-      <React.Fragment>
+      <>
         <TabTitle title="Projects" />
         <Fade style={style} right>
           {ProjectData.map((project, index) => {
@@ -26,7 +26,7 @@ class Projects extends Component {
         >
           <div className="object object--bottom shadow-lg"></div>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }

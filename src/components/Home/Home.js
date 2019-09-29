@@ -18,7 +18,7 @@ class Home extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <>
         <Container className="mainBody nopadding" fluid="true">
           <div
             className="rellax object object--foreground shadow-lg "
@@ -30,7 +30,7 @@ class Home extends Component {
           </Container>
           <ScrollUpButton />
         </Container>
-      </React.Fragment>
+      </>
     );
   }
 }

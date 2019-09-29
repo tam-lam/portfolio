@@ -39,7 +39,7 @@ export default function CenteredTabs() {
   }
 
   return (
-    <React.Fragment>
+    <>
       <StyledTabs
         value={value}
         onChange={handleChange}
@@ -61,7 +61,7 @@ export default function CenteredTabs() {
       <TabPanel value={value} index={2}>
         <Contact></Contact>
       </TabPanel>
-    </React.Fragment>
+    </>
   );
 }
 
