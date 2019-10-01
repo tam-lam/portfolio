@@ -29,6 +29,8 @@ div.text-center.col {
   width: 24px;
 }
 .project {
+  transition: 0.2s;
+  top: 0px;
   border-radius: 20px;
   position: relative;
   z-index: 100;
@@ -36,6 +38,9 @@ div.text-center.col {
   padding: 0 !important;
   margin-bottom: 50px;
   overflow: hidden;
+  &:hover {
+    top: -10px;
+  }
   h3 {
     font-weight: 900;
   }

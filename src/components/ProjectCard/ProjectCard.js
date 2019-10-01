@@ -45,7 +45,7 @@ class ProjectCard extends Component {
       });
       return (
         <>
-          <h3 className="h3--overview">_Features:</h3>
+          <h3 className="h3--overview">Features:</h3>
           <Container className="features">{paragraphs}</Container>
         </>
       );
@@ -87,7 +87,7 @@ class ProjectCard extends Component {
                           rel="noopener noreferrer"
                         >
                           <Image className="glyph" src={liveIcon} />
-                          Live Preview
+                          View App
                         </a>
                       </Col>
                     )}
@@ -107,9 +107,9 @@ class ProjectCard extends Component {
             </Col>
             <Col md={8}>
               <Container fuild="true" className="project__overview shadow-lg ">
-                <h3 className="h3--overview">_Overview</h3>
+                <h3 className="h3--overview">Overview</h3>
                 <p>{project.overview}</p>
-                <h3 className="h3--overview">_Technical:</h3>
+                <h3 className="h3--overview">Technical:</h3>
                 <Container className="technical">
                   <ul>{this.renderTechnical(project.technical)}</ul>
                 </Container>
