@@ -31,7 +31,7 @@ class TypedText extends Component {
     }
 
     function getRandomPun(lastPun) {
-      const puns = Constants.TYPED_TEXT;
+      const puns = Constants.TYPED_TEXT_CODE;
       var index = Math.floor(Math.random() * puns.length);
       while (puns[index] === lastPun) {
         index = Math.floor(Math.random() * puns.length);

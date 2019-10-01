@@ -10,3 +10,30 @@ $fgWhite: #f8f8f8;
   display: inline-block;
   max-width: 500px;
 }
+.characterHolder {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+.character {
+  margin: 30px 0 30px 0;
+  display: flex;
+  &__card {
+    background: $midGray;
+    color: $white;
+    border-radius: 1rem;
+    padding: 30px;
+    box-shadow: 1px 3px 8px 1px rgba($color: black, $alpha: 0.7);
+  }
+  &__card:not(:first-child) {
+    margin-left: -3.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .character {
+    &__card:not(:first-child) {
+      margin-left: -4.5rem;
+    }
+  }
+}

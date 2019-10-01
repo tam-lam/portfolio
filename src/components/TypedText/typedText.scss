@@ -7,6 +7,7 @@ $fgWhite: #f8f8f8;
 .typity {
   font-family: "Courier New", Courier, monospace;
   //   font-weight: bold;
+  background: $white;
   font-size: 1.5em;
   border-bottom: 2px solid $lightGray;
   padding-right: 2px;
@@ -52,6 +53,7 @@ $fgWhite: #f8f8f8;
 
 @media only screen and (max-width: 600px) {
   .typity {
+    font-size: 1em;
     border-bottom: 2px solid $lightGray;
     padding-right: 1px;
 
