@@ -5,8 +5,8 @@ export const TIME = "time";
 export const LAZY_MACHINE = "lazyMachine";
 export const PORTFOLIO = "portfolio";
 export const TYPED_TEXT = [
-  "Grad student",
-  "Developer",
-  "Program builder",
-  "Code craftsman"
+  "//Postgrad student.",
+  "//Developer.",
+  "//Program builder.",
+  "//Code craftsman."
 ];

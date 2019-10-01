@@ -1,0 +1,62 @@
+$black: #282828;
+$darkGray: #303030;
+$midGray: #383838;
+$lightGray: #484848;
+$white: #f0f0f0;
+$fgWhite: #f8f8f8;
+.typity {
+  font-family: "Courier New", Courier, monospace;
+  //   font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: 2px solid $lightGray;
+  padding-right: 2px;
+  position: relative;
+  transition: background-position 0.4s;
+  white-space: nowrap;
+
+  &::after {
+    animation: blink-cursor 0.75s step-end infinite;
+    background-color: transparent;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+  }
+
+  &.highlight {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.1) 50%,
+      transparent 50%
+    );
+    background-position: 100%;
+    background-size: 200% 100%;
+
+    &::after {
+      animation: none;
+    }
+  }
+}
+
+@keyframes blink-cursor {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .typity {
+    border-bottom: 2px solid $lightGray;
+    padding-right: 1px;
+
+    &::after {
+      width: 1px;
+    }
+  }
+}
