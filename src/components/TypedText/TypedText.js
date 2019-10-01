@@ -43,9 +43,9 @@ class TypedText extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <>
         <span className="typity"></span>
-      </React.Fragment>
+      </>
     );
   }
 }

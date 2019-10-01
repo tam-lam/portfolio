@@ -44,10 +44,10 @@ class ProjectCard extends Component {
         paragraphs.push(<p key={index}>{element}</p>);
       });
       return (
-        <React.Fragment>
+        <>
           <h3 className="h3--overview">_Features:</h3>
           <Container className="features">{paragraphs}</Container>
-        </React.Fragment>
+        </>
       );
     }
   }
@@ -67,7 +67,7 @@ class ProjectCard extends Component {
     const project = this.props.project;
     var previewImage = this.getPreviewImg(project.image);
     return (
-      <React.Fragment>
+      <>
         <Container
           fuild="true"
           className={this.getCustomCardClassName(project.id)}
@@ -118,7 +118,7 @@ class ProjectCard extends Component {
             </Col>
           </Row>
         </Container>
-      </React.Fragment>
+      </>
     );
   }
 }

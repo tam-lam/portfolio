@@ -9,9 +9,14 @@
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.1.1",
     "react-scroll": "^1.7.14",
     "rellax": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node-sass": "^4.11.0",
+    "eslint": "^6.3.0",
+    "node-sass": "^4.12.0",
+    "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

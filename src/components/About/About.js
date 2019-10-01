@@ -5,10 +5,10 @@ class About extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment>
+      <>
         <TabTitle title="About" />
         <TypedText />
-      </React.Fragment>
+      </>
     );
   }
 }
