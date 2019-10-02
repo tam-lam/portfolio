@@ -1,12 +1,14 @@
 @import "components/Home/home";
 @import "components/TabPanel/tabPanel";
 @import "components/Projects/projects";
-@import "components/ProjectCard/projectCard";
+@import "components/Projects/ProjectCard/projectCard";
 @import "components/ScrollUpButton/scrollUpButton";
 @import "components/TabTitle/tabTitle";
-@import "components/TypedText/typedText";
+@import "components/About/TypedText/typedText";
 @import "components/About/about";
-@import "components/CharacterCard/characterCard";
+@import "components/About/CharacterCard/characterCard";
+@import "components/About/TimeLine/timeLine";
+
 .App {
   overflow: hidden;
 }

@@ -4,6 +4,8 @@ import TypedText from "../TypedText/TypedText";
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import { CharacterCard } from "./CharacterCard/CharacterCard";
+import { TimeLine } from "./TimeLine/TimeLine";
+
 import CharacterData from "../../data/characters.json";
 class About extends Component {
   state = {};
@@ -13,14 +15,14 @@ class About extends Component {
         <TabTitle title="About" />
         <Fade right>
           <Container className="text-center">
-            <p className="aboutText">
+            <p className=" aboutText">
               Postgrad student, dev with a passion for Web and cross-platform
               developments.
             </p>
             <p>
               <TypedText />
             </p>
-            <div className="characterHolder">
+            <div className="container--centered">
               <div className="character">
                 {CharacterData.map((character, index) => {
                   return (
@@ -32,6 +34,7 @@ class About extends Component {
                   );
                 })}
               </div>
+              <TimeLine></TimeLine>
             </div>
           </Container>
         </Fade>
