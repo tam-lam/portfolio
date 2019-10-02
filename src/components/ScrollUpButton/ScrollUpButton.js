@@ -8,23 +8,23 @@ import Container from "react-bootstrap/Container";
 export const ScrollUpButton = params => {
   return (
     <Container className="text-center">
-      <Button bsPrefix="scrollUpBtn shadow">
-        <Link
-          activeClass="active"
-          to="banner"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
+      <Link
+        activeClass="active"
+        to="banner"
+        spy={true}
+        smooth={true}
+        offset={50}
+        duration={500}
+      >
+        <Button bsPrefix="scrollUpBtn shadow">
           <Image
             src={upArrow}
             style={{ opacity: 0.7 }}
             className="glyph"
           ></Image>{" "}
           Back to top
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </Container>
   );
 };

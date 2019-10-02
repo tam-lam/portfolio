@@ -2,11 +2,9 @@ import React, { Component } from "react";
 import { TabTitle } from "../TabTitle/TabTitle";
 import TypedText from "../TypedText/TypedText";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 import Fade from "react-reveal/Fade";
-
+import { CharacterCard } from "../CharacterCard/CharacterCard";
+import CharacterData from "../../data/characters.json";
 class About extends Component {
   state = {};
   render() {
@@ -22,27 +20,20 @@ class About extends Component {
             <p>
               <TypedText />
             </p>
-          </Container>
-          <div className=" characterHolder">
-            <div className="character">
-              <div className="character__card">
-                <h1>Title</h1>
-                <p>This is an article</p>
-              </div>
-              <div className="character__card">
-                <h1>Title</h1>
-                <p>This is an article</p>
-              </div>
-              <div className="character__card">
-                <h1>Title</h1>
-                <p>This is an article</p>
-              </div>
-              <div className="character__card">
-                <h1>Title</h1>
-                <p>This is an article</p>
+            <div className="characterHolder">
+              <div className="character">
+                {CharacterData.map((character, index) => {
+                  return (
+                    <CharacterCard
+                      key={index}
+                      hightlight={character.hightlight}
+                      description={character.description}
+                    />
+                  );
+                })}
               </div>
             </div>
-          </div>
+          </Container>
         </Fade>
       </>
     );
