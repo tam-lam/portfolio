@@ -3,7 +3,7 @@ import { TabTitle } from "../TabTitle/TabTitle";
 import TypedText from "../TypedText/TypedText";
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
-import { CharacterCard } from "../CharacterCard/CharacterCard";
+import { CharacterCard } from "./CharacterCard/CharacterCard";
 import CharacterData from "../../data/characters.json";
 class About extends Component {
   state = {};
