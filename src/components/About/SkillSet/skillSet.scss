@@ -1,0 +1,22 @@
+$black: #282828;
+$darkGray: #303030;
+$midGray: #383838;
+$lightGray: #484848;
+$white: #f0f0f0;
+$fgWhite: #f8f8f8;
+.skillSet {
+  .col {
+    padding: 10px;
+    max-width: 150px;
+  }
+  .card-body {
+    padding: 1rem 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skillSet {
+    .col {
+      padding: 0px;
+    }
+  }
+}

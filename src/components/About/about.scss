@@ -5,10 +5,14 @@ $lightGray: #484848;
 $white: #f0f0f0;
 $fgWhite: #f8f8f8;
 .aboutText {
+  &__text {
+    text-align: center;
+  }
+  padding-top: 10px;
   font-size: 1.5em;
   background: $white;
-  display: inline-block;
   max-width: 500px;
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 0 91%, 0 17%);
 }
 .container--centered {
   text-align: left;
