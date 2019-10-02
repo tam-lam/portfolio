@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as Constants from "../../constants/constants";
+import * as Constants from "../../../constants/constants";
 
 class TypedText extends Component {
   state = {};

@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
-import carSharing from "../../assets/images/carSharing.png";
-import time from "../../assets/images/time.png";
-import lazymachine from "../../assets/images/lazymachine.png";
-import portfolio from "../../assets/images/portfolio.png";
+import carSharing from "../../../assets/images/carSharing.png";
+import time from "../../../assets/images/time.png";
+import lazymachine from "../../../assets/images/lazymachine.png";
+import portfolio from "../../../assets/images/portfolio.png";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import gitIcon from "../../assets/images/github.png";
-import liveIcon from "../../assets/images/live.png";
-import * as Constants from "../../constants/constants";
+import gitIcon from "../../../assets/images/github.png";
+import liveIcon from "../../../assets/images/live.png";
+import * as Constants from "../../../constants/constants";
 
 class ProjectCard extends Component {
   state = {};

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { TabTitle } from "../TabTitle/TabTitle";
-import TypedText from "../TypedText/TypedText";
+import TypedText from "./TypedText/TypedText";
 import Container from "react-bootstrap/Container";
 import Fade from "react-reveal/Fade";
 import { CharacterCard } from "./CharacterCard/CharacterCard";
