@@ -6,7 +6,6 @@ export const SkillCard = props => {
     width: "100px",
     background: "transparent",
     border: "none",
-    color: "#303030",
     wordWrap: "none",
     padding: "0 !important"
   };
@@ -15,7 +14,7 @@ export const SkillCard = props => {
     height: "100px"
   };
   const titleStyle = {
-    fontSize: "1rem"
+    fontSize: "1.2rem"
   };
   const bodyStyle = {
     padding: "0 !important"

@@ -3,11 +3,29 @@ $darkGray: #303030;
 $midGray: #383838;
 $lightGray: #484848;
 $white: #f0f0f0;
-$fgWhite: #f8f8f8;
+$fgWhite: hsl(0, 0%, 97%);
 .skillSet {
+  .group {
+    padding: 20px 0;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  .row {
+    background: rgba($color: $darkGray, $alpha: 1);
+    color: $white;
+    border-radius: 20px;
+    padding: 20px 10px;
+  }
+
   .col {
-    padding: 10px;
+    padding: 10px 0 !important;
     max-width: 150px;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .card-body {
     padding: 1rem 0;

@@ -19,42 +19,50 @@ export const SkillSet = props => {
   return (
     <>
       <Container className="skillSet">
-        <Row className="justify-content-center">
-          <Col>
-            <SkillCard img={react} text="React JS" />
-          </Col>
-          <Col>
-            <SkillCard img={redux} text="Redux" />
-          </Col>
-          <Col>
-            <SkillCard img={nodejs} text="Node JS" />
-          </Col>
-          <Col>
-            <SkillCard img={html} text="HTML" />
-          </Col>
-          <Col>
-            <SkillCard img={css} text="CSS" />
-          </Col>
-          <Col>
-            <SkillCard img={sass} text="SASS" />
-          </Col>
-          <Col>
-            <SkillCard img={javascript} text="Javascript" />
-          </Col>
-          <Col>
-            <SkillCard img={php} text="PHP" />
-          </Col>
-          <Col>
-            <SkillCard img={python} text="Python" />
-          </Col>
-          <Col>
-            <SkillCard img={swift} text="Swift" />
-          </Col>
+        <div className="group">
+          <h3>Web Developement</h3>
+          <Row className="shadow-lg">
+            <Col>
+              <SkillCard img={react} text="React JS" />
+            </Col>
+            <Col>
+              <SkillCard img={redux} text="Redux" />
+            </Col>
+            <Col>
+              <SkillCard img={nodejs} text="Node JS" />
+            </Col>
+            <Col>
+              <SkillCard img={html} text="HTML" />
+            </Col>
+            <Col>
+              <SkillCard img={css} text="CSS" />
+            </Col>
+            <Col>
+              <SkillCard img={sass} text="SASS" />
+            </Col>
+            <Col>
+              <SkillCard img={javascript} text="Javascript" />
+            </Col>
+            <Col>
+              <SkillCard img={php} text="PHP" />
+            </Col>
+          </Row>
+        </div>
+        <div className="group ">
+          <h3 className="display-5">Others</h3>
+          <Row className="shadow-lg">
+            <Col>
+              <SkillCard img={python} text="Python" />
+            </Col>
+            <Col>
+              <SkillCard img={swift} text="Swift" />
+            </Col>
 
-          <Col>
-            <SkillCard img={java} text="Java" />
-          </Col>
-        </Row>
+            <Col>
+              <SkillCard img={java} text="Java" />
+            </Col>
+          </Row>
+        </div>
       </Container>
     </>
   );
