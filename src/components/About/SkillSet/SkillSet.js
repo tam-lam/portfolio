@@ -10,17 +10,20 @@ import javascript from "../../../assets/images/skill/javascript.png";
 import react from "../../../assets/images/skill/react.svg";
 import redux from "../../../assets/images/skill/redux.svg";
 import php from "../../../assets/images/skill/php.svg";
-import nodejs from "../../../assets/images/skill/nodejs.png";
+import nodejs from "../../../assets/images/skill/nodejs.svg";
 import python from "../../../assets/images/skill/python.png";
 import java from "../../../assets/images/skill/java.svg";
 import swift from "../../../assets/images/skill/swift.png";
+import { TabTitle } from "../../TabTitle/TabTitle";
 
 export const SkillSet = props => {
   return (
     <>
       <Container className="skillSet">
+        <div className="text-left d-lg-none">
+          {/* <h1 className=" text-left font-weight-bold">Skills</h1> */}
+        </div>
         <div className="group">
-          <h3>Web Developement</h3>
           <Row className="shadow-lg">
             <Col>
               <SkillCard img={react} text="React JS" />
@@ -49,7 +52,6 @@ export const SkillSet = props => {
           </Row>
         </div>
         <div className="group ">
-          <h3 className="display-5">Others</h3>
           <Row className="shadow-lg">
             <Col>
               <SkillCard img={python} text="Python" />

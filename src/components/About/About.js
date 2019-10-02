@@ -6,6 +6,8 @@ import { CharacterCard } from "./CharacterCard/CharacterCard";
 import { TimeLine } from "./TimeLine/TimeLine";
 import CharacterData from "../../data/characters.json";
 import { SkillSet } from "./SkillSet/SkillSet";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 class About extends Component {
   state = {};
   render() {
@@ -34,8 +36,16 @@ class About extends Component {
                 );
               })}
             </div>
+
             <TimeLine></TimeLine>
-            <SkillSet />
+            <Row>
+              <Col className="d-none d-md-block" md={4}>
+                <TabTitle title="Skills" />
+              </Col>
+              <Col md={8}>
+                <SkillSet />
+              </Col>
+            </Row>
           </div>
         </Fade>
       </>

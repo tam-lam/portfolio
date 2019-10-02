@@ -5,17 +5,20 @@ $lightGray: #484848;
 $white: #f0f0f0;
 $fgWhite: hsl(0, 0%, 97%);
 .skillSet {
+  h1 {
+  }
   .group {
-    padding: 20px 0;
+    padding-bottom: 40px;
   }
   h3 {
     font-weight: bold;
+    font-size: 1.5rem;
   }
   .row {
     background: rgba($color: $darkGray, $alpha: 1);
     color: $white;
     border-radius: 20px;
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
 
   .col {
@@ -33,6 +36,15 @@ $fgWhite: hsl(0, 0%, 97%);
 }
 @media only screen and (max-width: 768px) {
   .skillSet {
+    .row {
+      background: transparent;
+      box-shadow: none !important;
+      color: $darkGray;
+      padding: 5px 20px;
+    }
+    .group {
+      padding-bottom: 0px;
+    }
     .col {
       padding: 0px;
     }

@@ -7,14 +7,15 @@ export const SkillCard = props => {
     background: "transparent",
     border: "none",
     wordWrap: "none",
-    padding: "0 !important"
+    padding: "0 !important",
+    placeItems: "center"
   };
   const imgStyle = {
-    width: "100px",
-    height: "100px"
+    width: "80px",
+    height: "80px"
   };
   const titleStyle = {
-    fontSize: "1.2rem"
+    fontSize: "1rem"
   };
   const bodyStyle = {
     padding: "0 !important"
@@ -22,7 +23,9 @@ export const SkillCard = props => {
   return (
     <>
       <Card style={cardStyle}>
-        <Card.Img style={imgStyle} variant="top" src={props.img} />
+        <div className="text-center">
+          <Card.Img style={imgStyle} variant="top" src={props.img} />
+        </div>
         <Card.Body style={bodyStyle}>
           <Card.Title style={titleStyle} className="text-center">
             {props.text}
