@@ -8,6 +8,7 @@ import CharacterData from "../../data/characters.json";
 import { SkillSet } from "./SkillSet/SkillSet";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import { Hobbies } from "./Hobbies/Hobbies";
 class About extends Component {
   state = {};
   render() {
@@ -46,6 +47,15 @@ class About extends Component {
                 <SkillSet />
               </Col>
             </Row>
+            <Row>
+              <Col md={8}>
+                <Hobbies />
+              </Col>
+              <Col className="d-none d-md-block" md={4}>
+                <TabTitle title="Hobbies" />
+              </Col>
+            </Row>
+            {/* <Hobbies /> */}
           </div>
           <div style={{ height: "3000px" }}></div>
         </Fade>

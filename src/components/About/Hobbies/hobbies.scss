@@ -1,0 +1,15 @@
+.hobbies {
+  .row {
+    padding: 40px 20px;
+  }
+
+  .imgHolder {
+    margin: 5px 0;
+    position: relative;
+
+    img {
+      max-width: 100%;
+      // border-radius: 10px;
+    }
+  }
+}
