@@ -52,12 +52,11 @@ class About extends Component {
                 <Hobbies />
               </Col>
               <Col className="d-none d-md-block" md={4}>
-                <TabTitle title="Hobbies" />
+                <TabTitle title="Digital arts" />
               </Col>
             </Row>
             {/* <Hobbies /> */}
           </div>
-          <div style={{ height: "3000px" }}></div>
         </Fade>
       </>
     );

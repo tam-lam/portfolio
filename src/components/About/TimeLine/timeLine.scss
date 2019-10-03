@@ -82,6 +82,7 @@ $fgWhite: #f8f8f8;
   }
   .li--long {
     padding-bottom: 50px;
+    // margin-bottom: 30px;
   }
   .time {
     div {
@@ -123,7 +124,7 @@ $fgWhite: #f8f8f8;
   .timeLine {
     ul {
       &::before {
-        height: 0%;
+        height: 100%;
       }
       &::after {
         content: "";
@@ -147,6 +148,9 @@ $fgWhite: #f8f8f8;
       width: 0px !important;
       height: 0px !important;
     }
+    .li--long {
+      margin-bottom: 30px;
+    }
   }
 }
 @media only screen and (max-width: 420px) {
@@ -154,7 +158,7 @@ $fgWhite: #f8f8f8;
     ul {
       left: -15px;
       &::before {
-        height: 400%;
+        height: 380%;
       }
       &::after {
         content: "";

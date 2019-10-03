@@ -14,7 +14,6 @@ import nodejs from "../../../assets/images/skill/nodejs.svg";
 import python from "../../../assets/images/skill/python.png";
 import java from "../../../assets/images/skill/java.svg";
 import swift from "../../../assets/images/skill/swift.png";
-import { TabTitle } from "../../TabTitle/TabTitle";
 
 export const SkillSet = props => {
   return (

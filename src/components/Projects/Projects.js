@@ -24,7 +24,7 @@ class Projects extends Component {
           className="rellax objectHolder objectHolder--bottom"
           data-rellax-speed="3"
         >
-          <div className="object object--bottom shadow-lg"></div>
+          {/* <div className="object object--bottom shadow-lg"></div> */}
         </div>
       </>
     );

@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { TabTitle } from "../TabTitle/TabTitle";
 class Contact extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Contact</h1>
+        <TabTitle title="Contact" />
       </>
     );
   }

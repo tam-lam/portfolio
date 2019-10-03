@@ -1,0 +1,37 @@
+$black: #282828;
+$darkGray: #303030;
+$midGray: #383838;
+$lightGray: #484848;
+$white: #f0f0f0;
+$fgWhite: #f8f8f8;
+.footer {
+  padding-top: 100px;
+  &--main {
+    background: $darkGray;
+    clip-path: polygon(74% 56%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+  }
+  &--bg {
+    clip-path: polygon(66% 42%, 100% 0, 100% 100%, 0 100%, 0 0);
+    background: $black;
+    position: absolute;
+    z-index: -5 !important;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer {
+    &--bg {
+      // clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 99%, 0 0);
+
+      height: 20%;
+    }
+  }
+}

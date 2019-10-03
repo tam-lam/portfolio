@@ -9,7 +9,6 @@ $white: #f0f0f0;
 }
 
 .mainBody {
-  min-height: 2000px;
   position: relative;
   .banner {
     margin-bottom: 20px;
@@ -62,10 +61,11 @@ $white: #f0f0f0;
       height: 1000px;
     }
     &--bottom {
-      z-index: -1;
+      position: absolute;
+      z-index: -2;
       background: $black;
-      width: 1500px;
-      height: 1500px;
+      width: 500px;
+      height: 500px;
     }
   }
 }
