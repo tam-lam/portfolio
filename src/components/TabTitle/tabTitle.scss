@@ -5,13 +5,14 @@ $lightGray: #484848;
 $white: #f0f0f0;
 $fgWhite: #f8f8f8;
 .tabTitle {
+  display: inline-block;
   animation-name: flashing;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   position: relative;
-  z-index: -1;
   color: $darkGray;
+  background-color: $white !important;
 }
 @keyframes flashing {
   from {

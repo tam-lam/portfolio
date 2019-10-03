@@ -18,9 +18,34 @@ $fgWhite: #f8f8f8;
       position: absolute;
       top: 0;
       left: 0;
-      width: 0px;
-      height: 100%;
-      border: 1px dashed $darkGray;
+      width: 2px;
+      height: 340%;
+      background-image: linear-gradient(
+        to bottom,
+        $darkGray 20%,
+        rgba(255, 255, 255, 0) 0%
+      );
+      background-position: left;
+      background-size: 10px 15px;
+      background-repeat: repeat-y;
+    }
+    .skillMark {
+      height: 2px;
+      width: 40px;
+    }
+    .skillMark--main {
+      position: absolute !important;
+      background: $lightGray;
+      display: inline;
+      bottom: -0%;
+      left: 0px;
+    }
+    .skillMark--others {
+      position: absolute !important;
+      background: #303030;
+      display: inline;
+      bottom: -260%;
+      left: 0px;
     }
   }
   li {
@@ -94,8 +119,16 @@ $fgWhite: #f8f8f8;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .timeLine {
+    ul {
+      &::before {
+        height: 400%;
+      }
+      &::after {
+        content: "";
+      }
+    }
     font-size: 1.2rem;
     li {
       margin: 50px 0px;
@@ -109,6 +142,10 @@ $fgWhite: #f8f8f8;
         font-size: 0.6rem;
         left: 0px;
       }
+    }
+    .skillMark {
+      width: 20px !important;
+      height: 2px !important;
     }
   }
 }

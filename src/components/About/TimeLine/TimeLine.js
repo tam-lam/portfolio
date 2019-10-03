@@ -27,6 +27,14 @@ export const TimeLine = props => {
               <div className="time--bottom">2015</div>
             </div>
           </li>
+          <span
+            className=" rellax skillMark skillMark--main"
+            data-rellax-speed="-2"
+          ></span>
+          <span
+            className="rellax skillMark skillMark--others"
+            data-rellax-speed="1"
+          ></span>
         </ul>
       </div>
     </>

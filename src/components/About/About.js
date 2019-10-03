@@ -47,6 +47,7 @@ class About extends Component {
               </Col>
             </Row>
           </div>
+          <div style={{ height: "3000px" }}></div>
         </Fade>
       </>
     );
