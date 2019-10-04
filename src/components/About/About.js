@@ -75,10 +75,7 @@ class About extends Component {
           className="d-md-none rellax  shapeHolder shapeHolder--bottom"
           data-rellax-speed="3"
         >
-          <div
-            className="rellax shape--bottomCircle shadow-lg"
-            data-rellax-speed="1"
-          >
+          <div className="rellax shape--bottomCircle " data-rellax-speed="1">
             <div className="ring--inner">
               <div className="ring--outer" />
             </div>

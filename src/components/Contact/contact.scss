@@ -1,0 +1,23 @@
+.contactLinks {
+  display: grid;
+  place-content: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  z-index: 10;
+  min-width: 300px;
+  position: relative;
+  a {
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: bold;
+    color: $lightGray;
+  }
+  a:hover {
+    color: $black;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contactLinks {
+    margin-bottom: 120px;
+  }
+}
