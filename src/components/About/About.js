@@ -9,6 +9,7 @@ import { SkillSet } from "./SkillSet/SkillSet";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { Hobbies } from "./Hobbies/Hobbies";
+import { ScrollUpButton } from "../ScrollUpButton/ScrollUpButton";
 class About extends Component {
   state = {};
   render() {
@@ -55,9 +56,9 @@ class About extends Component {
                 <TabTitle title="Digital arts" />
               </Col>
             </Row>
-            {/* <Hobbies /> */}
           </div>
         </Fade>
+        <ScrollUpButton />
       </>
     );
   }

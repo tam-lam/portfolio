@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 import Fade from "react-reveal/Fade";
 import ProjectData from "../../data/projects.json";
 import { TabTitle } from "../TabTitle/TabTitle";
+import { ScrollUpButton } from "../ScrollUpButton/ScrollUpButton";
 class Projects extends Component {
   state = {};
 
@@ -26,6 +27,7 @@ class Projects extends Component {
         >
           {/* <div className="object object--bottom shadow-lg"></div> */}
         </div>
+        <ScrollUpButton />
       </>
     );
   }

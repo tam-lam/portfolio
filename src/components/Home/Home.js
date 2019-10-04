@@ -29,7 +29,6 @@ class Home extends Component {
           <Container>
             <CenteredTabs className="shadow-lg"></CenteredTabs>
           </Container>
-          <ScrollUpButton />
           <Footer />
         </Container>
       </>

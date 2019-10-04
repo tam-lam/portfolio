@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import github from "../../assets/images/github.svg";
 import linkedin from "../../assets/images/linkedin.svg";
+import resume from "../../assets/images/resume.svg";
 import email from "../../assets/images/mail.svg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -31,6 +32,13 @@ class Footer extends Component {
                   rel="noopener noreferrer"
                 >
                   <Image src={linkedin} />
+                </a>
+                <a
+                  href={ContactData.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={resume} />
                 </a>
                 <a href={"mailto:" + ContactData.email}>
                   <Image src={email} />
