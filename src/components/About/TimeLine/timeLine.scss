@@ -158,7 +158,7 @@ $fgWhite: #f8f8f8;
     ul {
       left: -15px;
       &::before {
-        height: 380%;
+        height: 330%;
       }
       &::after {
         content: "";
@@ -181,6 +181,9 @@ $fgWhite: #f8f8f8;
     .skillMark {
       width: 20px !important;
       height: 2px !important;
+    }
+    .skillMark--main {
+      bottom: 50% !important;
     }
   }
 }

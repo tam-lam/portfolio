@@ -19,8 +19,8 @@ class About extends Component {
           <div className="container--centered">
             <div className="aboutText">
               <p className="aboutText__text">
-                Postgrad student, dev with a passion for Web and cross-platform
-                developments.
+                Developer, postgrad student with a passion for Web and
+                cross-platform developments.
               </p>
             </div>
             <p>

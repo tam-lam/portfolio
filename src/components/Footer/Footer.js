@@ -1,23 +1,13 @@
 import React, { Component } from "react";
 import github from "../../assets/images/github.svg";
 import linkedin from "../../assets/images/linkedin.svg";
-import mail from "../../assets/images/mail.svg";
-import $ from "jquery";
-
+import email from "../../assets/images/mail.svg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import ContactData from "../../data/contacts.json";
 class Footer extends Component {
   state = {};
-  componentDidMount() {
-    var date = new Date();
-    if ($(document.body).height() < $(window).height()) {
-      $(".footer--main").attr(
-        "style",
-        "position: fixed!important; bottom: 0px;"
-      );
-    }
-  }
 
   render() {
     return (
@@ -27,11 +17,24 @@ class Footer extends Component {
           <div className="footer--main shadow-lg"></div>
           <div className="footer__content">
             <Row>
-              {/* <Col> Copyright &copy; {date.getFullYear()}, Tam Lam</Col> */}
               <Col>
-                <Image src={github}></Image>
-                <Image src={linkedin}></Image>
-                <Image src={mail}></Image>
+                <a
+                  href={ContactData.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={github} />
+                </a>
+                <a
+                  href={ContactData.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image src={linkedin} />
+                </a>
+                <a href={"mailto:" + ContactData.email}>
+                  <Image src={email} />
+                </a>
               </Col>
             </Row>
           </div>

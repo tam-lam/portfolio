@@ -8,12 +8,15 @@ $fgWhite: hsl(0, 0%, 97%);
   .group {
     padding-bottom: 40px;
   }
+  img {
+    opacity: 1;
+  }
   h3 {
     font-weight: bold;
     font-size: 1.5rem;
   }
   .row {
-    background: rgba($color: $darkGray, $alpha: 1);
+    background: rgba($color: $black, $alpha: 1);
     color: $white;
     border-radius: 20px;
     padding: 20px 20px;
@@ -34,6 +37,10 @@ $fgWhite: hsl(0, 0%, 97%);
 }
 @media only screen and (max-width: 767px) {
   .skillSet {
+    // img {
+    //   filter: invert(0%);
+    //   opacity: 0.8;
+    // }
     .row {
       background: transparent;
       box-shadow: none !important;

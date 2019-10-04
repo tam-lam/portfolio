@@ -3,17 +3,15 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import { SkillCard } from "./SkillCard/SkillCard";
-import html from "../../../assets/images/skill/html5.svg";
-import css from "../../../assets/images/skill/css3.png";
-import sass from "../../../assets/images/skill/sass.svg";
-import javascript from "../../../assets/images/skill/javascript.png";
-import react from "../../../assets/images/skill/react.svg";
-import redux from "../../../assets/images/skill/redux.svg";
-import php from "../../../assets/images/skill/php.svg";
-import nodejs from "../../../assets/images/skill/nodejs.svg";
-import python from "../../../assets/images/skill/python.png";
-import java from "../../../assets/images/skill/java.svg";
-import swift from "../../../assets/images/skill/swift.png";
+import html from "../../../assets/images/skill/colored/html5.svg";
+import css from "../../../assets/images/skill/colored/css3.svg";
+import sass from "../../../assets/images/skill/colored/sass.svg";
+import javascript from "../../../assets/images/skill/colored/javascript.svg";
+import react from "../../../assets/images/skill/colored/react.svg";
+import nodejs from "../../../assets/images/skill/colored/nodejs.svg";
+import python from "../../../assets/images/skill/colored/python.svg";
+import java from "../../../assets/images/skill/colored/java.svg";
+import swift from "../../../assets/images/skill/colored/swift.svg";
 
 export const SkillSet = props => {
   return (
@@ -25,11 +23,11 @@ export const SkillSet = props => {
         <div className="group">
           <Row className="shadow-lg">
             <Col>
-              <SkillCard img={react} text="React JS" />
+              <SkillCard img={react} text="React JS, Redux" />
             </Col>
-            <Col>
+            {/* <Col>
               <SkillCard img={redux} text="Redux" />
-            </Col>
+            </Col> */}
             <Col>
               <SkillCard img={nodejs} text="Node JS" />
             </Col>
@@ -45,9 +43,9 @@ export const SkillSet = props => {
             <Col>
               <SkillCard img={javascript} text="Javascript" />
             </Col>
-            <Col>
+            {/* <Col>
               <SkillCard img={php} text="PHP" />
-            </Col>
+            </Col> */}
           </Row>
         </div>
         <div className="group ">
