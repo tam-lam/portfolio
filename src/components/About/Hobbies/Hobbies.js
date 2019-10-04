@@ -17,7 +17,7 @@ export const Hobbies = props => {
             I love to make digital arts and exploring the outdoor
           </p>
         </div>
-        <Fade cascade>
+        <Fade>
           <Row>
             <Col className="imgHolder" xs={6} sm={6}>
               <Image className="artImg shadow-lg" src={sky} />

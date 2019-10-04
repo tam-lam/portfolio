@@ -6,6 +6,7 @@ class Contact extends Component {
     return (
       <>
         <TabTitle title="Contact" />
+        <div style={{ height: "500px" }}></div>
       </>
     );
   }

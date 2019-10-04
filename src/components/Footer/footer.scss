@@ -5,7 +5,25 @@ $lightGray: #484848;
 $white: #f0f0f0;
 $fgWhite: #f8f8f8;
 .footer {
-  padding-top: 100px;
+  padding-top: 0px;
+  &__content {
+    // background: $darkGray;
+    color: darkgray;
+    place-items: center;
+    display: grid;
+    padding: 30px 0;
+  }
+  img {
+    width: 40px;
+    transition: 0.2s;
+    filter: invert(100%);
+    opacity: 0.5;
+    margin: 0px 10px;
+  }
+  img:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
   &--main {
     background: $darkGray;
     clip-path: polygon(74% 56%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -14,7 +32,8 @@ $fgWhite: #f8f8f8;
     z-index: -2;
     bottom: 0;
     width: 100%;
-    height: 5%;
+    min-height: 150px;
+    // height: 5%;
   }
   &--bg {
     clip-path: polygon(66% 42%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -23,7 +42,15 @@ $fgWhite: #f8f8f8;
     z-index: -5 !important;
     bottom: 0;
     width: 100%;
-    height: 6%;
+    min-height: 160px;
+    // height: 6%;
+  }
+  &::after {
+    content: "";
+    background: $darkGray;
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
 }
 @media only screen and (max-width: 767px) {
