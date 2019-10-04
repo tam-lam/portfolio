@@ -23,6 +23,8 @@ $fgWhite: #f8f8f8;
   }
   .hobbiesText {
     &__text {
+      // background: rgba($color: $white, $alpha: 0.9);
+      color: $darkGray;
       max-width: 500px;
     }
     display: grid;
@@ -61,6 +63,10 @@ $fgWhite: #f8f8f8;
     .hobbiesText {
       color: $white;
       font-size: 1.2rem;
+      &__text {
+        color: $white;
+        max-width: 500px;
+      }
     }
   }
 }

@@ -29,7 +29,6 @@ $fgWhite: #f8f8f8;
     clip-path: polygon(74% 56%, 100% 0, 100% 100%, 0 100%, 0 0);
 
     position: absolute;
-    z-index: -2;
     bottom: 0;
     width: 100%;
     min-height: 150px;
@@ -58,7 +57,6 @@ $fgWhite: #f8f8f8;
     }
     &--bg {
       clip-path: polygon(63% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
-
       height: 20%;
     }
   }

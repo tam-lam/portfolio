@@ -22,10 +22,18 @@ class Projects extends Component {
         </Fade>
 
         <div
-          className="rellax objectHolder objectHolder--bottom"
+          className="rellax shapeHolder shapeHolder--bottom"
           data-rellax-speed="3"
         >
-          {/* <div className="object object--bottom shadow-lg"></div> */}
+          <div className="shape--bottom shadow-lg" />
+          <div
+            className="rellax shape--bottomCircle shadow-lg"
+            data-rellax-speed="5"
+          >
+            {/* <div className="ring--inner">
+              <div className="ring--outer" />
+            </div> */}
+          </div>
         </div>
         <ScrollUpButton />
       </>

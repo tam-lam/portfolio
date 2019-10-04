@@ -4,7 +4,6 @@ import Rellax from "rellax";
 import CenteredTabs from "../TabPanel/TabPanel";
 import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
-import { ScrollUpButton } from "../ScrollUpButton/ScrollUpButton";
 class Home extends Component {
   state = {};
   componentDidMount() {
@@ -29,6 +28,7 @@ class Home extends Component {
           <Container>
             <CenteredTabs className="shadow-lg"></CenteredTabs>
           </Container>
+
           <Footer />
         </Container>
       </>

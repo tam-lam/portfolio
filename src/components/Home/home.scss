@@ -61,23 +61,59 @@ $white: #f0f0f0;
       width: 1000px;
       height: 1000px;
     }
-    &--bottom {
-      position: absolute;
-      z-index: -2;
-      background: $black;
-      width: 500px;
-      height: 500px;
-    }
   }
 }
-.objectHolder {
+.shape {
   position: absolute;
   z-index: -1;
   &--bottom {
+    clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    z-index: -10;
+    background: $black;
     width: 100%;
-    height: 30%;
+    height: 2000px;
+  }
+  &--bottomCircle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    top: 700px;
+    left: 10%;
+    background: $darkGray;
+    display: grid;
+    place-content: center;
+    &::after {
+      position: absolute;
+      content: "";
+    }
+    .ring--inner {
+      background: transparent;
+      display: grid;
+      place-content: center;
+      border: 2px solid $darkGray;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+    }
+    .ring--outer {
+      background: transparent;
+      border: 1px solid $lightGray;
+      width: 2000px;
+      height: 2000px;
+      border-radius: 50%;
+    }
+  }
+}
+.shapeHolder {
+  position: absolute;
+  z-index: -100;
+  &--bottom {
+    width: 100%;
+    height: 50%;
     bottom: -10%;
-    left: -20%;
+    left: 0%;
   }
 }
 .span--hightlight {
@@ -91,7 +127,7 @@ $white: #f0f0f0;
     opacity: 1;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .banner {
     height: 400px !important;
   }
@@ -112,6 +148,16 @@ $white: #f0f0f0;
       top: 300px !important;
       width: 50px !important;
       height: 50px !important;
+    }
+  }
+  .shape {
+    &--bottomCircle {
+      width: 100px !important;
+      height: 100px !important;
+      .ring--outer {
+        width: 1500px;
+        height: 1500px;
+      }
     }
   }
 }

@@ -27,7 +27,10 @@ export const SkillCard = props => {
           <Card.Img style={imgStyle} variant="top" src={props.img} />
         </div>
         <Card.Body style={bodyStyle}>
-          <Card.Title style={titleStyle} className="text-center">
+          <Card.Title
+            style={titleStyle}
+            className="d-none d-md-block text-center"
+          >
             {props.text}
           </Card.Title>
         </Card.Body>

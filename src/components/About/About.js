@@ -58,6 +58,32 @@ class About extends Component {
             </Row>
           </div>
         </Fade>
+        <div
+          className="d-none d-md-block rellax shapeHolder shapeHolder--bottom"
+          data-rellax-speed="3"
+        >
+          <div
+            className="rellax shape--bottomCircle shadow-lg "
+            data-rellax-speed="5"
+          >
+            <div className="ring--inner">
+              <div className="ring--outer" />
+            </div>
+          </div>
+        </div>
+        <div
+          className="d-md-none rellax  shapeHolder shapeHolder--bottom"
+          data-rellax-speed="3"
+        >
+          <div
+            className="rellax shape--bottomCircle shadow-lg"
+            data-rellax-speed="1"
+          >
+            <div className="ring--inner">
+              <div className="ring--outer" />
+            </div>
+          </div>
+        </div>
         <ScrollUpButton />
       </>
     );
