@@ -23,7 +23,7 @@ div.card-body {
 
 .features {
   border-left: 1px solid $white;
-  line-height: 0.75;
+  line-height: 1;
   padding-left: 10px;
   padding-right: 30px;
   margin-left: 20px !important;
@@ -63,14 +63,12 @@ div.card-body {
   }
 
   &__title {
+    padding-left: 10px;
     font-size: 2em !important;
     color: $white;
     font-weight: bold !important;
     margin: 10px;
     background: $darkGray;
-  }
-  &__title::before {
-    content: "_";
   }
   &__overview {
     height: 100%;

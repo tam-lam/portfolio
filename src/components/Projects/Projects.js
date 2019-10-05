@@ -29,11 +29,7 @@ class Projects extends Component {
           <div
             className="rellax shape--bottomCircle shadow-lg"
             data-rellax-speed="9"
-          >
-            {/* <div className="ring--inner">
-              <div className="ring--outer" />
-            </div> */}
-          </div>
+          ></div>
         </div>
         <ScrollUpButton />
       </>

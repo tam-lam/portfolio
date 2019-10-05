@@ -1,14 +1,6 @@
 [
   {
     "id": 1,
-    "name": "Portfolio site",
-    "image": "portfolio",
-    "github": "https://github.com/tam-lam/portfolio",
-    "overview": "Personal portfolio site built to house projects and demonstrate my accumulated front-end skills. ",
-    "technical": ["React JS", "NodeJS", "HTML,CSS", "SASS", "Javascript, JSON"]
-  },
-  {
-    "id": 2,
     "name": "Car sharing app",
     "image": "carSharing",
     "livePreview": "https://damp-wildwood-73011.herokuapp.com",
@@ -23,17 +15,24 @@
     "features": [
       "Secure authentication/registration",
       "Working with Google Geolocation APIs",
-      "Utilize distance calculation and services",
+      "User distance calculation and services",
       "PayPal sandbox transactions support"
     ]
   },
-
+  {
+    "id": 2,
+    "name": "Portfolio site",
+    "image": "portfolio",
+    "github": "https://github.com/tam-lam/portfolio",
+    "overview": "Personal portfolio site built to house projects and demonstrate my accumulated front-end skills. ",
+    "technical": ["React JS", "NodeJS", "HTML,CSS", "SASS", "Javascript, JSON"]
+  },
   {
     "id": 3,
     "name": "IOS Timer app",
     "image": "time",
     "github": "https://github.com/tam-lam/T1m3.",
-    "overview": "A university project, IOS timer app which provides data storage, accelerometer analytics and weather information. My responsibilities includes Scrum master, team lead, UI designer and mobile developer.",
+    "overview": "A university project, IOS timer app which provides data storage, accelerometer analytics and weather information. My responsibilities include Scrum master, team lead, UI designer and mobile developer.",
     "technical": [
       "Swift, CoreData, Cocoapods",
       "Third party weather APIs",
@@ -42,7 +41,7 @@
     ],
     "features": [
       "Store and update timer data",
-      "Use of accelerometer data to provide analytics",
+      "Utilize of accelerometer data to provide analytics",
       "Provide weather information based on location"
     ]
   },
@@ -52,7 +51,7 @@
     "image": "lazyMachine",
     "livePreview": "https://github.com/tam-lam/lazy-machine/releases",
     "github": "https://github.com/tam-lam/lazy-machine",
-    "overview": "I got an idea to build something that can force me off the computer when I found myself spend too much time on it. I first created a Python script followed by learning Electron JS and build a simple Mac OS and Windows timer apps with the function to automatically disrupt the computer from working. All accomplished in the span of 2 weeks.",
+    "overview": "I got an idea to build something that can force me off the computer when I found myself spending too much time on it. A small hobby project was created. I built a Python script, learned Electron JS and developed a simple Mac OS and Windows timer apps to automatically disrupt the computer from working. All accomplished in the span of 2 weeks.",
     "technical": [
       "Electron JS",
       "HTML, CSS, Javascript",

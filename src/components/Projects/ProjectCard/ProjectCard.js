@@ -11,6 +11,8 @@ import Image from "react-bootstrap/Image";
 import gitIcon from "../../../assets/images/github.png";
 import liveIcon from "../../../assets/images/live.png";
 import * as Constants from "../../../constants/constants";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
 
 class ProjectCard extends Component {
   state = {};
@@ -63,6 +65,35 @@ class ProjectCard extends Component {
         return "project shadow-lg";
     }
   }
+  renderViewSource(project) {
+    const popover = (
+      <Popover id="popover-basic">
+        {/* <Popover.Title as="h3">Popover right</Popover.Title> */}
+        <Popover.Content>Please contact for source code</Popover.Content>
+      </Popover>
+    );
+    if (project.image == Constants.PORTFOLIO) {
+      return (
+        <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+          <Col className="text-center">
+            <a target="_blank" rel="noopener noreferrer">
+              <Image className="glyph" src={gitIcon} fluid />
+              View Source
+            </a>
+          </Col>
+        </OverlayTrigger>
+      );
+    } else {
+      return (
+        <Col className="text-center">
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <Image className="glyph" src={gitIcon} fluid />
+            View Source
+          </a>
+        </Col>
+      );
+    }
+  }
   render() {
     const project = this.props.project;
     var previewImage = this.getPreviewImg(project.image);
@@ -91,16 +122,7 @@ class ProjectCard extends Component {
                         </a>
                       </Col>
                     )}
-                    <Col className="text-center">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Image className="glyph" src={gitIcon} fluid />
-                        View Source
-                      </a>
-                    </Col>
+                    {this.renderViewSource(project)}
                   </Row>
                 </Card.Body>
               </Card>
