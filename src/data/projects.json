@@ -4,8 +4,8 @@
     "name": "Portfolio site",
     "image": "portfolio",
     "github": "https://github.com/tam-lam/portfolio",
-    "overview": "Amet amet anim ea culpa minim minim et. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui.tion qui ullamco.",
-    "technical": ["React JS", "NodeJS", "HTML,CSS", "SASS", "JSON"]
+    "overview": "Personal portfolio site built to house projects and demonstrate my accumulated front-end skills. ",
+    "technical": ["React JS", "NodeJS", "HTML,CSS", "SASS", "Javascript, JSON"]
   },
   {
     "id": 2,
@@ -13,35 +13,37 @@
     "image": "carSharing",
     "livePreview": "https://damp-wildwood-73011.herokuapp.com",
     "github": "https://github.com/tam-lam/homyscar",
-    "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
-    "technical": ["React JS, Redux", "NodeJS, Express"],
+    "overview": "For the capstone project at RMIT, my team set out to create a full stack web app for a car sharing service. My roles include UI design, front-end development( includes state management, working with Google Maps API and fetching data from backend API), SCRUM meeting and project documentations.",
+    "technical": [
+      "React JS, Redux",
+      "HTML, CSS, Javascript",
+      "NodeJS, Express, MongoDB",
+      "SCRUM Development"
+    ],
     "features": [
       "Secure authentication/registration",
       "Working with Google Geolocation APIs",
-      "User distance calculation and services",
+      "Utilize distance calculation and services",
       "PayPal sandbox transactions support"
     ]
   },
 
   {
     "id": 3,
-    "name": "Stopwatch IOS app",
+    "name": "IOS Timer app",
     "image": "time",
     "github": "https://github.com/tam-lam/T1m3.",
-    "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
+    "overview": "A university project, IOS timer app which provides data storage, accelerometer analytics and weather information. My responsibilities includes Scrum master, team lead, UI designer and mobile developer.",
     "technical": [
-      "Swift",
-      "CoreData",
-      "MVC",
-      "Cocoapods",
-      "Third party APIs",
-      "Delegation, Notification, Singleton patterns",
+      "Swift, CoreData, Cocoapods",
+      "Third party weather APIs",
+      "MVC, Delegation, Notification, Singleton patterns",
       "Adaptive layout"
     ],
     "features": [
-      "Amet amet anim ea culpa minim minim et",
-      "Amet amet anim ea culpa minim minim et",
-      "Amet amet anim ea culpa minim minim et"
+      "Store and update timer data",
+      "Use of accelerometer data to provide analytics",
+      "Provide weather information based on location"
     ]
   },
   {
@@ -50,10 +52,10 @@
     "image": "lazyMachine",
     "livePreview": "https://github.com/tam-lam/lazy-machine/releases",
     "github": "https://github.com/tam-lam/lazy-machine",
-    "overview": "Amet amet anim ea culpa minim minim et. Laboris veniam ut ad nulla do velit eu magna sit. Non non amet cillum adipisicing amet culpa reprehenderit amet officia non tempor elit culpa. Minim eiusmod duis aliqua mollit ut voluptate duis culpa laboris esse do elit Lorem qui. Commodo magna eiusmod ea adipisicing ex sint exercitation qui ullamco.",
+    "overview": "I got an idea to build something that can force me off the computer when I found myself spend too much time on it. I first created a Python script followed by learning Electron JS and build a simple Mac OS and Windows timer apps with the function to automatically disrupt the computer from working. All accomplished in the span of 2 weeks.",
     "technical": [
       "Electron JS",
-      "HTML, CSS",
+      "HTML, CSS, Javascript",
       "Python, Powershell scripting",
       "MAC OS and Windows 10"
     ]

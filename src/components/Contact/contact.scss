@@ -7,13 +7,14 @@
   min-width: 300px;
   position: relative;
   a {
-    text-decoration: underline;
+    background: $white;
     font-size: 2rem;
     font-weight: bold;
     color: $lightGray;
   }
   a:hover {
     color: $black;
+    text-decoration: none;
   }
 }
 @media only screen and (max-width: 767px) {

@@ -11,6 +11,9 @@ $fgWhite: #f8f8f8;
 div.text-center.col {
   padding: 5px;
 }
+div.card-body {
+  padding: 10px 20px 0px 20px;
+}
 .technical {
   ul {
     column-count: 2;
@@ -20,7 +23,7 @@ div.text-center.col {
 
 .features {
   border-left: 1px solid $white;
-  line-height: 1;
+  line-height: 0.75;
   padding-left: 10px;
   padding-right: 30px;
   margin-left: 20px !important;
@@ -54,8 +57,7 @@ div.text-center.col {
     clip-path: polygon(100% 0, 100% 80%, 75% 100%, 0 100%, 0 0);
   }
   &__card {
-    padding: 30px;
-    // padding-bottom: 0;
+    padding: 20px;
     border: none !important;
     background: transparent !important;
   }
