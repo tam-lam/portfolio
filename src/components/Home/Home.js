@@ -21,7 +21,11 @@ class Home extends Component {
       <>
         <Container className="mainBody nopadding" fluid="true">
           <div
-            className="rellax object object--foreground shadow-lg "
+            className=" d-md-none rellax object object--foreground shadow-lg "
+            data-rellax-speed="-1"
+          ></div>
+          <div
+            className="d-none d-md-block rellax object object--foreground shadow-lg "
             data-rellax-speed="-3"
           ></div>
           <Banner />

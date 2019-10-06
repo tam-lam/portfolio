@@ -26,11 +26,11 @@ class Projects extends Component {
           data-rellax-speed="3"
         >
           <div className="shape--bottom shadow-lg" />
-          <div
-            className="rellax shape--bottomCircle shadow-lg"
-            data-rellax-speed="9"
-          ></div>
         </div>
+        <div
+          className="rellax shape--bottomCircle shadow-lg"
+          data-rellax-speed="9"
+        ></div>
         <ScrollUpButton />
       </>
     );

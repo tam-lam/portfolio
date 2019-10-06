@@ -12,7 +12,14 @@ function Banner() {
           <br /> developer.
         </h1>
         <img
-          className="rellax illustration"
+          alt="illustration"
+          className=" d-md-none rellax illustration"
+          data-rellax-speed="-2"
+          src={illustration}
+        />
+        <img
+          alt="illustration"
+          className="d-none d-md-block rellax illustration"
           data-rellax-speed="3"
           src={illustration}
         />

@@ -68,18 +68,17 @@ class ProjectCard extends Component {
   renderViewSource(project) {
     const popover = (
       <Popover id="popover-basic">
-        {/* <Popover.Title as="h3">Popover right</Popover.Title> */}
         <Popover.Content>Please contact for source code</Popover.Content>
       </Popover>
     );
-    if (project.image == Constants.PORTFOLIO) {
+    if (project.image === Constants.PORTFOLIO) {
       return (
         <OverlayTrigger trigger="click" placement="top" overlay={popover}>
           <Col className="text-center">
-            <a target="_blank" rel="noopener noreferrer">
+            <div role="button" tabindex="0">
               <Image className="glyph" src={gitIcon} fluid />
               View Source
-            </a>
+            </div>
           </Col>
         </OverlayTrigger>
       );
