@@ -14,7 +14,7 @@ function Banner() {
         <img
           alt="illustration"
           className=" d-md-none rellax illustration"
-          data-rellax-speed="-2"
+          data-rellax-speed="1"
           src={illustration}
         />
         <img

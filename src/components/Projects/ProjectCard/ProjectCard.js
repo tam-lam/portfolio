@@ -75,7 +75,7 @@ class ProjectCard extends Component {
       return (
         <OverlayTrigger trigger="click" placement="top" overlay={popover}>
           <Col className="text-center">
-            <div role="button" tabindex="0">
+            <div>
               <Image className="glyph" src={gitIcon} fluid />
               View Source
             </div>

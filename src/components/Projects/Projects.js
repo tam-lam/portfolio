@@ -25,12 +25,14 @@ class Projects extends Component {
           className="rellax shapeHolder shapeHolder--bottom"
           data-rellax-speed="3"
         >
-          <div className="shape--bottom shadow-lg" />
+          <div className="shape--bottom shadow-lg">
+            <div
+              className="rellax shape--bottomCircle shadow-lg"
+              data-rellax-speed="9"
+            ></div>
+          </div>
         </div>
-        <div
-          className="rellax shape--bottomCircle shadow-lg"
-          data-rellax-speed="9"
-        ></div>
+
         <ScrollUpButton />
       </>
     );
