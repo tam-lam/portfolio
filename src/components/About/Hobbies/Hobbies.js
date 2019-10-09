@@ -14,7 +14,7 @@ export const Hobbies = props => {
       <div className="hobbies">
         <div className="hobbiesText">
           <p className="hobbiesText__text">
-            I love to code, make ideas come to live and doing digital arts
+            I love to code, make ideas come to life and doing digital arts
             occasionally
           </p>
         </div>
