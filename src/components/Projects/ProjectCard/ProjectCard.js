@@ -11,8 +11,6 @@ import Image from "react-bootstrap/Image";
 import gitIcon from "../../../assets/images/github.png";
 import liveIcon from "../../../assets/images/live.png";
 import * as Constants from "../../../constants/constants";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Popover from "react-bootstrap/Popover";
 
 class ProjectCard extends Component {
   state = {};
@@ -66,32 +64,14 @@ class ProjectCard extends Component {
     }
   }
   renderViewSource(project) {
-    const popover = (
-      <Popover id="popover-basic">
-        <Popover.Content>Please contact for source code</Popover.Content>
-      </Popover>
+    return (
+      <Col className="text-center">
+        <a href={project.github} target="_blank" rel="noopener noreferrer">
+          <Image className="glyph" src={gitIcon} fluid />
+          View Source
+        </a>
+      </Col>
     );
-    if (project.image === Constants.PORTFOLIO) {
-      return (
-        <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-          <Col className="text-center">
-            <div>
-              <Image className="glyph" src={gitIcon} fluid />
-              View Source
-            </div>
-          </Col>
-        </OverlayTrigger>
-      );
-    } else {
-      return (
-        <Col className="text-center">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <Image className="glyph" src={gitIcon} fluid />
-            View Source
-          </a>
-        </Col>
-      );
-    }
   }
   render() {
     const project = this.props.project;
